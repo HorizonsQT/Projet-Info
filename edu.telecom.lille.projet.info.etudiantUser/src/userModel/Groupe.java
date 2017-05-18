@@ -6,7 +6,7 @@ public class Groupe {
 	private String AdminLogin;
 	private int Group_ID;
 	private int Nombre_etudiants = 0;
-	private HashMap<Etudiant, Integer> Ensemble_etudiant = new HashMap<Etudiant, Integer>();
+	private HashMap<Integer, Etudiant> Ensemble_etudiant = new HashMap<Integer, Etudiant>();
 	
 	public String Admin() {
 		return AdminLogin;
@@ -34,7 +34,7 @@ public class Groupe {
 	 * Si l'étudiant est déjà dans le groupe, on ne l'ajoute pas
 	 */
 	public void Ajouter(Etudiant etud) {
-		Ensemble_etudiant.putIfAbsent(etud, Nombre_etudiants+1);
+		Ensemble_etudiant.putIfAbsent(Nombre_etudiants+1, etud);
 		Nombre_etudiants = Ensemble_etudiant.size();
 		etud.mettre(Group_ID);
 	}
@@ -50,8 +50,11 @@ public class Groupe {
 	 * Les membres du groupe
 	 * 
 	 */
-	//TODO
 	public String membres() {
-		return Ensemble_etudiant.keySet().toString();
+		String membres = Ensemble_etudiant.get(0).prenom().concat(" ").concat(Ensemble_etudiant.get(0).nom());
+		for (Integer i : Ensemble_etudiant.keySet()) {
+			membres.concat(", ").concat(Ensemble_etudiant.get(i).prenom()).concat(" ").concat(Ensemble_etudiant.get(i).nom());
+		}
+		return membres;
 	}
 }

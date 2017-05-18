@@ -1,6 +1,13 @@
 package userModel;
 
 import java.util.HashMap;
+import java.util.List;
+
+import org.jdom2.*;
+import org.jdom2.input.SAXBuilder;
+
+import java.io.File;
+import java.io.IOException;
 
 
 /**
@@ -20,11 +27,11 @@ public class GroupDB {
 	 * Le fichier contenant la base de données.
 	 * 
 	 */
-	private String file;
+	private String fichier;
 	/**
 	 * Le HashMap contenant la base de données
 	 */
-	private HashMap<Groupe, Integer> DB_Groupe = new HashMap<Groupe, Integer>();
+	private HashMap<Integer, Groupe> DB_Groupe = new HashMap<Integer, Groupe>();
 	
 	/**
 	 * 
@@ -35,10 +42,11 @@ public class GroupDB {
 	 * @param file
 	 * 		Le nom du fichier qui contient la base de données.
 	 */
-	public GroupDB(String file){
+	public GroupDB(String fichier){
 		//TODO Fonction à modifier
 		super();
-		this.setFile(file);
+		Administrateur su = root_admin();
+		this.setFile(fichier);
 	}
 	
 	/**
@@ -49,7 +57,7 @@ public class GroupDB {
 	 */
 	
 	public String getFile() {
-		return file;
+		return fichier;
 	}
 	
 	/**
@@ -59,15 +67,45 @@ public class GroupDB {
 	 * 		Le nom du fichier qui contient la base de données.
 	 */
 	
-	public void setFile(String file) {
-		this.file = file;
+	public void setFile(String fichier) {
+		this.fichier = fichier;
 	}
 	/**
 	 * loadDB
 	 * 
 	 * On accède au HashMap
 	 */
-	public HashMap<Groupe, Integer> loadDB() {
+	public HashMap<Integer, Groupe> loadDB() {
+		SAXBuilder builder = new SAXBuilder();
+		File fichier_xml = new File(fichier);
+		
+		/**
+		 * L'utilisation d'un fichier extérieur nécessite la construction try/catch
+		 */
+		try {
+			Document document = (Document) builder.build(fichier_xml);
+			Element racine = document.getRootElement();
+			List<Element> list_groupe = racine.getChildren("Groups");
+			for (int i = 0; i < list_groupe.size(); i++) {
+			   Element etud = (Element) list_groupe.get(i);
+			   int ID = Integer.parseInt(etud.getChildText("studentid"));
+			   String su = root_admin().login;
+			   Groupe groupe_temp = new Groupe(su, ID);
+			   DB_Groupe.put(i, groupe_temp);
+			}		
+			
+			
+			} catch(IOException e) {
+			    // Lorsque des erreurs se présentent.
+				System.out.println("Erreur 1!");
+			} catch (Throwable e) {
+				// Pour les erreurs.
+				System.out.println("Erreur 2!");
+				e.printStackTrace();
+			} finally {
+			    // Encore les erreurs
+				System.out.println("Erreur 3!");
+		}
 		return DB_Groupe;
 	}
 	/**
@@ -75,7 +113,12 @@ public class GroupDB {
 	 * 
 	 * On remplace le HashMap
 	 */
-	public void saveDB(HashMap<Groupe, Integer> DB_new) {
+	public void saveDB(HashMap<Integer, Groupe> DB_new) {
 		DB_Groupe = DB_new;
+	}
+	
+	public Administrateur root_admin() {
+		Administrateur su = new Administrateur("sudo", 0, "su", "do", "admin");
+		return su;
 	}
 }
