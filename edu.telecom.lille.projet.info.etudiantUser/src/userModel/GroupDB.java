@@ -45,6 +45,7 @@ public class GroupDB {
 	public GroupDB(String fichier){
 		//TODO Fonction à modifier
 		super();
+		@SuppressWarnings("unused")
 		Administrateur su = root_admin();
 		this.setFile(fichier);
 	}

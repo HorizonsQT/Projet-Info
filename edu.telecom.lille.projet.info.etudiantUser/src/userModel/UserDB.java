@@ -47,6 +47,7 @@ public class UserDB {
 	public UserDB(String fichier){
 		//TODO Fonction à modifier
 		super();
+		@SuppressWarnings("unused")
 		Administrateur su = root_admin();
 		this.setFile(fichier);
 	}

@@ -3,7 +3,9 @@ package userModel;
 public class Etudiant extends Utilisateur {
 	private int identifiant_de_groupe = 0;
 	private int identifiant_etudiant;
-	
+	/**
+	 * L'identifiant de groupe 0 correspond à une absence de groupe
+	 */
 	public int groupe() {
 		return identifiant_de_groupe;
 	}
@@ -28,10 +30,6 @@ public class Etudiant extends Utilisateur {
 		this.nom_de_famille = nom;
 		this.mot_de_passe = mot_de_passe;
 	}
-	
-	/**
-	 * L'identifiant de groupe 0 correspond à une absence de groupe
-	 */
 	
 	/**
 	 * Mettre l'étudiant dans une groupe

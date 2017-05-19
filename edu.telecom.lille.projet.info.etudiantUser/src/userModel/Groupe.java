@@ -1,6 +1,7 @@
 package userModel;
 
 import java.util.HashMap;
+import java.util.Set;
 
 public class Groupe {
 	private String AdminLogin;
@@ -24,6 +25,7 @@ public class Groupe {
 	 * @param ID
 	 */
 	public Groupe(String Admin, int ID) {
+		this.Ensemble_etudiant.clear();
 		this.AdminLogin = Admin;
 		this.Group_ID = ID;
 	}
@@ -34,7 +36,7 @@ public class Groupe {
 	 * Si l'étudiant est déjà dans le groupe, on ne l'ajoute pas
 	 */
 	public void Ajouter(Etudiant etud) {
-		Ensemble_etudiant.putIfAbsent(Nombre_etudiants+1, etud);
+		Ensemble_etudiant.putIfAbsent(etud.ID(), etud);
 		Nombre_etudiants = Ensemble_etudiant.size();
 		etud.mettre(Group_ID);
 	}
@@ -42,7 +44,7 @@ public class Groupe {
 	 * Supprimer un étudiant
 	 */
 	public void Supprimer(Etudiant etud) {
-		Ensemble_etudiant.remove(etud);
+		Ensemble_etudiant.remove(etud.ID());
 		Nombre_etudiants = Ensemble_etudiant.size();
 		etud.enlever();
 	}
@@ -51,9 +53,12 @@ public class Groupe {
 	 * 
 	 */
 	public String membres() {
-		String membres = Ensemble_etudiant.get(0).prenom().concat(" ").concat(Ensemble_etudiant.get(0).nom());
-		for (Integer i : Ensemble_etudiant.keySet()) {
-			membres.concat(", ").concat(Ensemble_etudiant.get(i).prenom()).concat(" ").concat(Ensemble_etudiant.get(i).nom());
+		String membres = new String();
+		Set<Integer> keyset_temp = Ensemble_etudiant.keySet();
+		for (Integer i : keyset_temp) {
+			String nom_temp = Ensemble_etudiant.get(i).nom();
+			String prenom_temp = Ensemble_etudiant.get(i).prenom();
+			membres = membres + prenom_temp + " " + nom_temp + "; ";
 		}
 		return membres;
 	}
