@@ -1,6 +1,9 @@
 package userModel;
 
 public class Professeur extends Utilisateur {
+	/**
+	 * L'identifiant d'un utilisateur est unique.
+	 */
 	private int identifiant_professeur;
 	
 	public Professeur(String Login, int ID, String prenom, String nom,  String mot_de_passe) {

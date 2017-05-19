@@ -88,9 +88,9 @@ public class UserDB {
 		try {
 			Document document = (Document) builder.build(fichier_xml);
 			Element racine = document.getRootElement();
-			List<Element> list_etud = racine.getChildren("Students");
-			for (int i = 0; i < list_etud.size(); i++) {
-			   Element etud = (Element) list_etud.get(i);
+			
+			List<Element> liste_etud = racine.getChildren("Students");
+			for (Element etud : liste_etud) {
 			   String login = etud.getChildText("login");
 			   int ID = Integer.parseInt(etud.getChildText("studentid"));
 			   String prenom = etud.getChildText("firstname");
@@ -100,14 +100,11 @@ public class UserDB {
 			   
 			   Etudiant etudiant_temp = new Etudiant(login, ID, prenom, nom, mot_de_passe);
 			   etudiant_temp.mettre(group_ID);
-			   DB_Utilisateurs.put(i, etudiant_temp);
+			   DB_Utilisateurs.put(ID, etudiant_temp);
 			}
 			
-			int taille_temp = DB_Utilisateurs.size();
-			
-			List<Element> list_prof = racine.getChildren("Teachers");
-			for (int i = 0; i < list_prof.size(); i++) {
-			   Element prof = (Element) list_prof.get(i);
+			List<Element> liste_prof = racine.getChildren("Teachers");
+			for (Element prof : liste_prof) {
 			   String login = prof.getChildText("login");
 			   int ID = Integer.parseInt(prof.getChildText("teacherId"));
 			   String prenom = prof.getChildText("firstname");
@@ -116,23 +113,19 @@ public class UserDB {
 			   
 			   
 			   Professeur prof_temp = new Professeur(login, ID, prenom, nom, mot_de_passe);
-			   DB_Utilisateurs.put(taille_temp + i, prof_temp);
+			   DB_Utilisateurs.put(ID, prof_temp);
 			}
-			
-			taille_temp = DB_Utilisateurs.size();
-			
-			List<Element> list_admin = racine.getChildren("Administrators");
-			for (int i = 0; i < list_admin.size(); i++) {
-			   Element admin = (Element) list_admin.get(i);
+						
+			List<Element> liste_admin = racine.getChildren("Administrators");
+			for (Element admin : liste_admin) {
 			   String login = admin.getChildText("login");
 			   int ID = Integer.parseInt(admin.getChildText("adminId"));
 			   String prenom = admin.getChildText("firstname");
 			   String nom = admin.getChildText("surname");
 			   String mot_de_passe = admin.getChildText("pwd");
 			   
-			   
 			   Administrateur admin_temp = new Administrateur(login, ID, prenom, nom, mot_de_passe);
-			   DB_Utilisateurs.put(taille_temp + i, admin_temp);
+			   DB_Utilisateurs.put(ID, admin_temp);
 			}
 			
 			

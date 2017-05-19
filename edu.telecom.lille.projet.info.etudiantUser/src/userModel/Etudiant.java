@@ -1,6 +1,9 @@
 package userModel;
 
 public class Etudiant extends Utilisateur {
+	/**
+	 * L'identifiant d'un utilisateur est unique.
+	 */
 	private int identifiant_de_groupe = 0;
 	private int identifiant_etudiant;
 	/**

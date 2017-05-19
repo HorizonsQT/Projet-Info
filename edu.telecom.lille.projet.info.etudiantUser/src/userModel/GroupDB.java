@@ -28,6 +28,7 @@ public class GroupDB {
 	 * 
 	 */
 	private String fichier;
+	private String arbre = System.getProperty("user.dir");
 	/**
 	 * Le HashMap contenant la base de données
 	 */
@@ -78,8 +79,9 @@ public class GroupDB {
 	 */
 	public HashMap<Integer, Groupe> loadDB() {
 		SAXBuilder builder = new SAXBuilder();
-		File fichier_xml = new File(fichier);
-		
+		File fichier_xml = new File(arbre, fichier);
+		System.out.println(fichier_xml.length());
+		System.out.println(fichier_xml.getAbsolutePath());
 		/**
 		 * L'utilisation d'un fichier extérieur nécessite la construction try/catch
 		 */
@@ -87,18 +89,20 @@ public class GroupDB {
 			Document document = (Document) builder.build(fichier_xml);
 			Element racine = document.getRootElement();
 			List<Element> list_groupe = racine.getChildren("Groups");
-			for (int i = 0; i < list_groupe.size(); i++) {
-			   Element etud = (Element) list_groupe.get(i);
-			   int ID = Integer.parseInt(etud.getChildText("studentid"));
+			for (Element groupe : list_groupe) {
+			   String id_temp = groupe.getChildText("groupId");
+			   System.out.println(id_temp);
+			   System.out.println(groupe.getContentSize());
+			   int ID = Integer.parseInt(id_temp);
 			   String su = root_admin().login;
 			   Groupe groupe_temp = new Groupe(su, ID);
-			   DB_Groupe.put(i, groupe_temp);
+			   DB_Groupe.put(ID, groupe_temp);
 			}		
 			
 			
 			} catch(IOException e) {
 			    // Lorsque des erreurs se présentent.
-				System.out.println("Erreur 1!");
+				e.printStackTrace();
 			} catch (Throwable e) {
 				// Pour les erreurs.
 				System.out.println("Erreur 2!");
