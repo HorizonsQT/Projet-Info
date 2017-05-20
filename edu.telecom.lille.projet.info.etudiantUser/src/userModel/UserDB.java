@@ -25,11 +25,17 @@ import java.io.IOException;
 public class UserDB {
 	
 	/**
-	 * 
-	 * Le fichier contenant la base de données.
-	 * 
+	 * Le fichier xml qui contient les groupes a pour elements:
+	 * <UsersDB>
+	 * 		<Students>
+	 * 			<Student>
+	 * 				<login>String</login>
+     * 				etc
+     * 			</Student>
+     * etc
 	 */
-	private String fichier;
+	private String fichier = "fichier_initial";//Nom du fichier
+	private String arbre = System.getProperty("user.dir");
 	/**
 	 * Le HashMap contenant la base de données des utilisateurs
 	 */
@@ -46,9 +52,8 @@ public class UserDB {
 	 */
 	public UserDB(String fichier){
 		//TODO Fonction à modifier
-		super();
-		@SuppressWarnings("unused")
-		Administrateur su = root_admin();
+		//super();
+		//Administrateur su = root_admin();
 		this.setFile(fichier);
 	}
 	
@@ -70,8 +75,8 @@ public class UserDB {
 	 * 		Le nom du fichier qui contient la base de données.
 	 */
 	
-	public void setFile(String fichier) {
-		this.fichier = fichier;
+	public void setFile(String fichier_set) {
+		this.fichier = fichier_set;
 	}
 	/**
 	 * loadDB
@@ -79,17 +84,18 @@ public class UserDB {
 	 * On accède au HashMap après l'avoir créé à partir du fichier XML
 	 */
 	public HashMap<Integer, Utilisateur> loadDB() {
-		SAXBuilder builder = new SAXBuilder();
-		File fichier_xml = new File(fichier);
+		SAXBuilder builder = new SAXBuilder();				// Constructeur à partir du fichier
+		File fichier_xml = new File(arbre, fichier);		// Le fichier que l'on ouvre
 		
 		/**
 		 * L'utilisation d'un fichier extérieur nécessite la construction try/catch
 		 */
 		try {
 			Document document = (Document) builder.build(fichier_xml);
-			Element racine = document.getRootElement();
-			
-			List<Element> liste_etud = racine.getChildren("Students");
+			Element racine = document.getRootElement();		//La racine représente <UsersDB>
+			// Les étudiants
+			Element etudiants = racine.getChild("Students");// <Students>
+			List<Element> liste_etud = etudiants.getChildren();// L'ensemble des fils de <Students>			
 			for (Element etud : liste_etud) {
 			   String login = etud.getChildText("login");
 			   int ID = Integer.parseInt(etud.getChildText("studentid"));
@@ -102,8 +108,9 @@ public class UserDB {
 			   etudiant_temp.mettre(group_ID);
 			   DB_Utilisateurs.put(ID, etudiant_temp);
 			}
-			
-			List<Element> liste_prof = racine.getChildren("Teachers");
+			// Les professeurs
+			Element professeurs = racine.getChild("Teachers");// <Teachers>
+			List<Element> liste_prof = professeurs.getChildren();// L'ensemble des fils de <Teachers>			
 			for (Element prof : liste_prof) {
 			   String login = prof.getChildText("login");
 			   int ID = Integer.parseInt(prof.getChildText("teacherId"));
@@ -115,8 +122,9 @@ public class UserDB {
 			   Professeur prof_temp = new Professeur(login, ID, prenom, nom, mot_de_passe);
 			   DB_Utilisateurs.put(ID, prof_temp);
 			}
-						
-			List<Element> liste_admin = racine.getChildren("Administrators");
+			
+			Element administrateurs = racine.getChild("Students");// <Administrators>
+			List<Element> liste_admin = administrateurs.getChildren();// L'ensemble des fils de <Administrators>			
 			for (Element admin : liste_admin) {
 			   String login = admin.getChildText("login");
 			   int ID = Integer.parseInt(admin.getChildText("adminId"));
@@ -131,15 +139,12 @@ public class UserDB {
 			
 			
 			} catch(IOException e) {
-			    // Lorsque des erreurs se présentent.
-				System.out.println("Erreur 1!");
+			    												// Lorsque des erreurs se présentent.
+				e.printStackTrace();
 			} catch (Throwable e) {
-				// Pour les erreurs.
-				System.out.println("Erreur 2!");
+																// Pour les erreurs.
 				e.printStackTrace();
 			} finally {
-			    // Encore les erreurs
-				System.out.println("Erreur 3!");
 		}
 		return DB_Utilisateurs;
 	}
@@ -149,6 +154,7 @@ public class UserDB {
 	 * On remplace le HashMap
 	 */
 	public void saveDB(HashMap<Integer, Utilisateur> DB_new) {
+		//TODO Not yet implemented
 		DB_Utilisateurs = DB_new;
 	}
 	

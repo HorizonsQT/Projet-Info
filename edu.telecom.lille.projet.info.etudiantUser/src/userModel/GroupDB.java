@@ -5,8 +5,11 @@ import java.util.List;
 
 import org.jdom2.*;
 import org.jdom2.input.SAXBuilder;
+import org.jdom2.output.Format;
+import org.jdom2.output.XMLOutputter;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 
@@ -23,14 +26,17 @@ import java.io.IOException;
 public class GroupDB {
 	
 	/**
-	 * 
-	 * Le fichier contenant la base de données.
-	 * 
+	 * Le fichier xml qui contient les groupes a pour elements:
+	 * <UsersDB>
+	 * 		<Groups>
+	 * 			<GROUPE>
+	 * 				<groupId>
+	 * 					"ID" 
 	 */
-	private String fichier;
-	private String arbre = System.getProperty("user.dir");
+	private String fichier = "fichier_initial";//Le nom du fichier contenant la base de données.
+	private String arbre = System.getProperty("user.dir");// Le chemin pour y parvenir
 	/**
-	 * Le HashMap contenant la base de données
+	 * Le HashMap contenant la base de données; la valeur à laquelle est associée chaque groupe sera son identifiant, que l'on suppose unique
 	 */
 	private HashMap<Integer, Groupe> DB_Groupe = new HashMap<Integer, Groupe>();
 	
@@ -45,9 +51,8 @@ public class GroupDB {
 	 */
 	public GroupDB(String fichier){
 		//TODO Fonction à modifier
-		super();
-		@SuppressWarnings("unused")
-		Administrateur su = root_admin();
+		//super();
+		//Administrateur su = root_admin();
 		this.setFile(fichier);
 	}
 	
@@ -69,47 +74,43 @@ public class GroupDB {
 	 * 		Le nom du fichier qui contient la base de données.
 	 */
 	
-	public void setFile(String fichier) {
-		this.fichier = fichier;
+	public void setFile(String fichier_set) {
+		this.fichier = fichier_set;
 	}
 	/**
 	 * loadDB
 	 * 
-	 * On accède au HashMap
+	 * Cette focntion renvoie le HashMap associé au fichier xml défini par setFile().
 	 */
 	public HashMap<Integer, Groupe> loadDB() {
-		SAXBuilder builder = new SAXBuilder();
-		File fichier_xml = new File(arbre, fichier);
-		System.out.println(fichier_xml.length());
-		System.out.println(fichier_xml.getAbsolutePath());
+		SAXBuilder builder = new SAXBuilder();			// Constructeur à partir du fichier
+		File fichier_xml = new File(arbre, fichier);	// Le fichier que l'on ouvre
+		
+		String su = root_admin().login;					//On crée l'administrateur du groupe
+		
 		/**
 		 * L'utilisation d'un fichier extérieur nécessite la construction try/catch
 		 */
 		try {
 			Document document = (Document) builder.build(fichier_xml);
-			Element racine = document.getRootElement();
-			List<Element> list_groupe = racine.getChildren("Groups");
+			Element racine = document.getRootElement();	//La racine représente <UsersDB>
+			Element groups = racine.getChild("Groups");	// <Groups>
+			List<Element> list_groupe = groups.getChildren();// L'ensemble des fils de <Groups>
 			for (Element groupe : list_groupe) {
-			   String id_temp = groupe.getChildText("groupId");
-			   System.out.println(id_temp);
-			   System.out.println(groupe.getContentSize());
-			   int ID = Integer.parseInt(id_temp);
-			   String su = root_admin().login;
+			   String id_temp = groupe.getChildText("groupId");// Chaque groupe se caractérise par son identifiant de groupe
+			   int id_int = Integer.parseInt(id_temp);	// On convertit la chaîne de caractères en nombre
+			   int ID = id_int;
 			   Groupe groupe_temp = new Groupe(su, ID);
 			   DB_Groupe.put(ID, groupe_temp);
-			}		
-			
+			}			
 			
 			} catch(IOException e) {
-			    // Lorsque des erreurs se présentent.
+			    										// Lorsque des erreurs se présentent.
 				e.printStackTrace();
 			} catch (Throwable e) {
-				// Pour les erreurs.
-				System.out.println("Erreur 2!");
+														// Pour les erreurs.
 				e.printStackTrace();
 			} finally {
-			    // Encore les erreurs
-				System.out.println("Erreur 3!");
 		}
 		return DB_Groupe;
 	}
@@ -117,9 +118,37 @@ public class GroupDB {
 	 * saveDB
 	 * 
 	 * On remplace le HashMap
+	 * @throws IOException 
+	 * @throws JDOMException 
 	 */
-	public void saveDB(HashMap<Integer, Groupe> DB_new) {
+	public void saveDB(HashMap<Integer, Groupe> DB_new) throws IOException, JDOMException {
 		DB_Groupe = DB_new;
+		
+		File fichier_xml = new File(arbre, fichier);
+		fichier_xml.createNewFile();
+		
+		Document document = new Document();			//On crée un document
+		Element UsersDB = new Element("UsersDB");	//Elément qui deviendra la racine
+		document.setRootElement(UsersDB);			//<UsersDB> devient la racine
+		
+		Element Groups = new Element("Groups");
+		
+		for (Groupe g : DB_Groupe.values()) {		//On parcourt les identifiants de groupe dans le HashMap
+			String ID = Integer.toString(g.ID());
+			Element Group = new Element("Group");	//On crée un nouveau sous-élement de groupes, qui repréente un groupe
+			Group.addContent(new Element("groupId").setText(ID));// Chaque groupe a un sous-élément groupId qui est associé à une chaîne de carctères, i.e. son identifiant
+	
+			Groups.addContent(Group);				// L'élément <Groupe> créé est ajouté à l'arborescence de <Groupes>
+			
+		}
+		
+		document.getRootElement().addContent(Groups);// L'élément <Groupes>, contenant tous les groupes de la base de données, est associé à la racine
+													// Nouvelle sortie arbre +"\\" + fichier
+		XMLOutputter fichier_xml_sortie = new XMLOutputter();
+
+													// On écrit à l'emplacement
+		fichier_xml_sortie.setFormat(Format.getPrettyFormat());
+		fichier_xml_sortie.output(document, new FileWriter(fichier_xml));
 	}
 	
 	public Administrateur root_admin() {
