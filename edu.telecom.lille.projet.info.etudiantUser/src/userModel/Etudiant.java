@@ -4,16 +4,12 @@ public class Etudiant extends Utilisateur {
 	/**
 	 * L'identifiant d'un utilisateur est unique.
 	 */
-	private int identifiant_de_groupe = 0;
-	private int identifiant_etudiant;
+
 	/**
 	 * L'identifiant de groupe 0 correspond à une absence de groupe
 	 */
 	public int groupe() {
-		return identifiant_de_groupe;
-	}
-	public int ID() {
-		return identifiant_etudiant;
+		return ID_group;
 	}
 	
 	/**
@@ -27,7 +23,7 @@ public class Etudiant extends Utilisateur {
 	 * Lors de la création, on n'associe pas immédiatement de groupe
 	 */
 	public Etudiant(String Login, int ID, String prenom, String nom,  String mot_de_passe) {
-		this.identifiant_etudiant = ID;
+		this.ID = ID;
 		this.login = Login;
 		this.prenom = prenom;
 		this.nom_de_famille = nom;
@@ -39,13 +35,17 @@ public class Etudiant extends Utilisateur {
 	 * @param int groupe_ID
 	 */
 	public void mettre(int groupe_ID) {
-		identifiant_de_groupe = groupe_ID;
+		ID_group = groupe_ID;
 	}
 	
 	/**
 	 * Enlever l'étudiant d'une groupe
 	 */
 	public void enlever() {
-		identifiant_de_groupe = 0;
+		ID_group = 0;
+	}
+	
+	public int ID_groupe() {
+		return ID_group;
 	}
 }

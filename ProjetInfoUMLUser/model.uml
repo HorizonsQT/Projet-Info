@@ -66,9 +66,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__5K_8Q4NEea0wN3m9VlUGQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__5K_8g4NEea0wN3m9VlUGQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_MJ2jwDb-Eee-yZe0XdLupw" name="ensemble_utilisateurs">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
-      </ownedAttribute>
+      <ownedAttribute xmi:id="_MJ2jwDb-Eee-yZe0XdLupw" name="ensemble_DB" type="_Jmd4UD1REeePY5XuAfYwZg"/>
       <ownedOperation xmi:id="_EOwgIA4OEea0wN3m9VlUGQ" name="loadDB"/>
       <ownedOperation xmi:id="_GKFkYA4OEea0wN3m9VlUGQ" name="saveDB"/>
       <ownedOperation xmi:id="_YK-C0DfbEeeFldcFQ89iFw" name="getFile"/>
@@ -128,22 +126,6 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_cxM34Db7Eee-yZe0XdLupw" name="GroupDB">
-      <ownedAttribute xmi:id="_wh0isDb7Eee-yZe0XdLupw" name="file">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_bbGDwDb_Eee-yZe0XdLupw" name="ensembe_groupes">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
-      </ownedAttribute>
-      <ownedOperation xmi:id="_0aAVMDb7Eee-yZe0XdLupw" name="loadDB"/>
-      <ownedOperation xmi:id="_22e-sDb7Eee-yZe0XdLupw" name="saveDB"/>
-      <ownedOperation xmi:id="_uAgLsDfbEeeFldcFQ89iFw" name="getFile"/>
-      <ownedOperation xmi:id="_uAgLsjfbEeeFldcFQ89iFw" name="setFile">
-        <ownedParameter xmi:id="_uAgLszfbEeeFldcFQ89iFw" name="fichier">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedParameter>
-      </ownedOperation>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_pvAOQDb_Eee-yZe0XdLupw" name="Contrainte_horaire">
       <ownedAttribute xmi:id="_ygc1wDb_Eee-yZe0XdLupw" name="identifiant">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -180,6 +162,16 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t9FfsDipEeeNlqsy1g2lbw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t9JxIDipEeeNlqsy1g2lbw" value="*"/>
       </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Jmd4UD1REeePY5XuAfYwZg" name="Couple_DB">
+      <ownedAttribute xmi:id="_PvxY4D1REeePY5XuAfYwZg" name="Utilisateur_HashMap" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XAueAD1REeePY5XuAfYwZg" name="Groupe_HashMap" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_gzzhoD1REeePY5XuAfYwZg" name="groupes"/>
+      <ownedOperation xmi:id="_ikYucD1REeePY5XuAfYwZg" name="utilisateurs"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_0n6zAPvWEeW-4OPaS2iZdg" name="userController">
@@ -248,16 +240,6 @@
       <ownedEnd xmi:id="_KRHycDb8Eee-yZe0XdLupw" name="userDB" type="_7rGdAA4NEea0wN3m9VlUGQ" aggregation="composite" association="_KQ_2oDb8Eee-yZe0XdLupw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KRK1wDb8Eee-yZe0XdLupw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KRK1wTb8Eee-yZe0XdLupw" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_h9rHUDb8Eee-yZe0XdLupw" name="contains" memberEnd="_h9rHUTb8Eee-yZe0XdLupw _h9uxsDb8Eee-yZe0XdLupw" navigableOwnedEnd="_h9uxsDb8Eee-yZe0XdLupw">
-      <ownedEnd xmi:id="_h9rHUTb8Eee-yZe0XdLupw" name="userController" type="_0j-CQA4NEea0wN3m9VlUGQ" association="_h9rHUDb8Eee-yZe0XdLupw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h9s8gDb8Eee-yZe0XdLupw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h9uKoDb8Eee-yZe0XdLupw" value="1"/>
-      </ownedEnd>
-      <ownedEnd xmi:id="_h9uxsDb8Eee-yZe0XdLupw" name="groupDB" type="_cxM34Db7Eee-yZe0XdLupw" aggregation="composite" association="_h9rHUDb8Eee-yZe0XdLupw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h9v_0Db8Eee-yZe0XdLupw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h9wm4Db8Eee-yZe0XdLupw" value="1"/>
       </ownedEnd>
     </packagedElement>
   </packagedElement>
