@@ -1,1 +1,1 @@
-azerty
+Gestion des utilisateurs pour une application d'emploi du temps.

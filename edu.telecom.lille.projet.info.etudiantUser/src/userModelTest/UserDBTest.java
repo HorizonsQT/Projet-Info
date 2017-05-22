@@ -69,8 +69,7 @@ public class UserDBTest {
 		database.saveDB(DB_new);
 		//vérification
 		Couple_DB DB_resultat = database.loadDB();
-//		System.out.println(DB_resultat);
-//		System.out.println(DB_new);
+		
 		Boolean resultat = DB_resultat.equals(DB_new);
 		assertTrue(resultat);
 	}
@@ -83,6 +82,62 @@ public class UserDBTest {
 		Boolean result2 = admin.mot_de_passe().equals(temp.mot_de_passe());
 		Boolean result3 = admin.nom().equals(temp.nom());
 		assertTrue(result1 & result2 & result3);
+	}
+	
+	@Test
+	public void testMain() throws IOException {
+		String fichier_temp_1 = "db_save_1.xml";
+		String fichier_temp_2 = "db_save_2.xml";
+		
+		database.setFile(fichier_temp_1);
+		UserDB database_2 = new UserDB(fichier_temp_2);
+		UserDB database_3 = new UserDB("");
+		
+		//On crée les groupes et les utilisateurs qui seront mis dans le nouveau HashMap
+		Administrateur admin1 = database.root_admin();
+		Groupe groupe1 = new Groupe(admin1.login(), 1);
+		Groupe groupe2 = new Groupe(admin1.login(), 2);
+		Etudiant etud1 = new Etudiant("login", 75, "prenom", "nom_de_famille", "mot_de_passe");
+		Etudiant etud2 = new Etudiant("Tian", 456, "Tian", "Tian", "Tian");
+		Professeur prof1 = new Professeur("Tian", 42, "Tian", "Tian", "Tian");
+		
+		//On crée le HashMap qui sera enregistré dns un fichier
+		HashMap<Integer, Groupe> DB_new_groupes = new HashMap<Integer, Groupe>();
+		DB_new_groupes.put(1, groupe1);
+		DB_new_groupes.put(2, groupe2);
+		HashMap<Integer, Utilisateur> DB_new_users = new HashMap<Integer, Utilisateur>();
+		DB_new_users.put(0, admin1);
+		DB_new_users.put(75, etud1);
+		DB_new_users.put(456, etud2);
+		DB_new_users.put(42, prof1);
+		
+		Couple_DB DB_new = new Couple_DB(DB_new_users, DB_new_groupes); 
+		database.saveDB(DB_new);
+		//vérification
+		database_2.saveDB(database.loadDB());
+		database_3.setFile(fichier_temp_2);
+		database.loadDB();
+		database_2.loadDB();
+		database_3.loadDB();
+		System.out.println("database:  ");
+		
+
+		for (Utilisateur i : database.loadDB().getUsers().values()) {
+			System.out.print(i.login());
+		}
+		for (Groupe i : database.loadDB().getGroups().values()) {
+			System.out.print(i.ID());
+		}
+		System.out.println("\nAnd database_3:  ");
+		for (Utilisateur i : database_3.loadDB().getUsers().values()) {
+			System.out.print(i.login());
+		}
+		for (Groupe i : database_3.loadDB().getGroups().values()) {
+			System.out.print(i.ID());
+		}
+		Boolean resultat = database_3.loadDB().getUsers().get(456).nom().equals(etud2.nom());
+		//Boolean resultat = database.loadDB().equals(database_3.loadDB()); False car les bases de données ne sont pas identiques, bien que les Utilisateurs et les groupes le sont.
+		assertTrue(resultat);
 	}
 
 }
