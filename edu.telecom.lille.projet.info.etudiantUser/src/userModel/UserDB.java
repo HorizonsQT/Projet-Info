@@ -37,6 +37,9 @@ public class UserDB {
      * 				etc
      * 			</Student>
      * etc
+     * 
+     * 
+     * On distingue la base de donnée locale, de type Couple_DB, et le fichier xml.
 	 */
 	private String fichier = "fichier_initial";//Nom du fichier
 	private String arbre = System.getProperty("user.dir");
@@ -47,7 +50,8 @@ public class UserDB {
 	private HashMap<Integer, Utilisateur> DB_Utilisateurs = new HashMap<Integer, Utilisateur>();	//Utilisateurs
 	private HashMap<Integer, Groupe> DB_Groupe = new HashMap<Integer, Groupe>();//Groupes
 	private HashMap<Integer, Contrainte_horaire> DB_Contraintes = new HashMap<Integer, Contrainte_horaire>();
-	
+		
+	//On a une instance de la base de données
 	private Couple_DB DB_tout = new Couple_DB(DB_Utilisateurs, DB_Groupe, DB_Contraintes);
 
 	
@@ -91,9 +95,9 @@ public class UserDB {
 	/**
 	 * loadDB
 	 *
-	 * On accède au HashMap après l'avoir créé à partir du fichier XML
+	 * On créé à partir du fichier XML une instance Couple_DB de la base de données
 	 */
-	public Couple_DB loadDB() {
+	public void loadfile() {
 		SAXBuilder builder = new SAXBuilder();				// Constructeur à partir du fichier
 		File fichier_xml = new File(arbre, fichier);		// Le fichier que l'on ouvre
 		String su = root_admin().login;						// On crée l'administrateur du groupe
@@ -185,16 +189,21 @@ public class UserDB {
 		DB_tout.setUsers(DB_Utilisateurs);
 		DB_tout.setGroups(DB_Groupe);
 		DB_tout.setConstraints(DB_Contraintes);
+	}
+	/**
+	 * On renvoie l'instance locale de la base de données
+	 * @return
+	 */
+	public Couple_DB loadDB() {
 		return DB_tout;
 	}
 	/**
 	 * saveDB
 	 * 
-	 * On remplace le HashMap
+	 * On enregistre la base de données locale dans un fichier xml
 	 * @throws IOException 
 	 */
-	public void saveDB(Couple_DB DB_new) throws IOException {
-		DB_tout = DB_new;
+	public void savefile() throws IOException {
 		DB_Groupe = DB_tout.getGroups();
 		DB_Utilisateurs = DB_tout.getUsers();
 		DB_Contraintes = DB_tout.getConstraints();
@@ -287,6 +296,13 @@ public class UserDB {
 		// On écrit à l'emplacement prévu
 		fichier_xml_sortie.setFormat(Format.getPrettyFormat());
 		fichier_xml_sortie.output(document, new FileWriter(fichier_xml));
+	}
+	/**
+	 * On remplace la base de données locale par une nouvelle version
+	 * @param DB_new
+	 */
+	public void saveDB(Couple_DB DB_new) {
+		DB_tout = DB_new;
 	}
 	
 	public Administrateur root_admin() {

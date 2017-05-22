@@ -77,6 +77,8 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
         </ownedParameter>
       </ownedOperation>
+      <ownedOperation xmi:id="_4glcsD7VEeeCdIKF2dWuYg" name="savefile"/>
+      <ownedOperation xmi:id="_5hC0ID7VEeeCdIKF2dWuYg" name="loadfile"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_FMnk8DaHEeeA6u1sUIJwlA" name="Administrateur">
       <generalization xmi:id="_Bnwr8DcoEeeaJeQWDRBGVQ" general="_Wln74Db6Eee-yZe0XdLupw"/>

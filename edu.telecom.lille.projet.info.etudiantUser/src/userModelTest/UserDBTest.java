@@ -31,6 +31,7 @@ public class UserDBTest {
 
 	@Test
 	public void testLoadDB() {
+		database.loadfile();
 		Couple_DB set_temp = database.loadDB();
 		HashMap<Integer, Utilisateur> utilisateurs_temp = set_temp.getUsers();
 		HashMap<Integer, Groupe> groupes_temp = set_temp.getGroups();
@@ -71,6 +72,7 @@ public class UserDBTest {
 		
 		Couple_DB DB_new = new Couple_DB(DB_new_users, DB_new_groupes, DB_new_constraints); 
 		database.saveDB(DB_new);
+		database.savefile();
 		//vérification
 		Couple_DB DB_resultat = database.loadDB();
 		
@@ -121,11 +123,17 @@ public class UserDBTest {
 		
 		Couple_DB DB_new = new Couple_DB(DB_new_users, DB_new_groupes, DB_new_constraints); 
 		database.saveDB(DB_new);
+		database.savefile();
 		//vérification
+		database.loadfile();
 		database_2.saveDB(database.loadDB());
+		database_2.savefile();
 		database_3.setFile(fichier_temp_2);
+		database.loadfile();
 		database.loadDB();
+		database_2.loadfile();
 		database_2.loadDB();
+		database_3.loadfile();
 		database_3.loadDB();
 		System.out.println("database:  ");
 		

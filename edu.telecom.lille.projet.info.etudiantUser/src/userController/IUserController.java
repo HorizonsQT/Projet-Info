@@ -137,6 +137,26 @@ public interface IUserController{
 	 */
 	public boolean removeGroup(String adminLogin, int groupId);
 	/**
+	 * 
+	 * @param adminLogin
+	 * 				Le login de l'administrateur qui va ajouter cette contrainte
+	 * @param constraintId
+	 * @param prof
+	 * @param debut
+	 * @param fin
+	 * @param com
+	 * @return
+	 */
+	public boolean addConstraint(String adminLogin, int constraintId, String prof, int debut, int fin, String com);
+	/**
+	 * 
+	 * @param adminLogin
+	 * 				Le login de l'administrateur qui va supprimer la constrainte
+	 * @param constraintId
+	 * @return
+	 */
+	public boolean removeConstraint(String adminLogin, int constraintId);
+	/**
 	 * Fonction permettant d'associer un étudiant à un groupe. Elle renvoie true si l'association a été réalisée et false sinon. 
 	 * Cette fonction devra tester si l'étudiant et le groupe existent ou non, puis elle devra sauvegarder la base de donnée. 
 	 * @param adminLogin
@@ -148,7 +168,7 @@ public interface IUserController{
 	 * 				Identifiant du groupe.
 	 * @return
 	 * 		Un boolean indiquant si l'association a bien été réalisée.
-	 */
+	 */	
 	public boolean associateStudToGroup(String adminLogin, String studentLogin, int groupId);
 	/**
 	 * Fonction permettant de récupérer toutes les informations des utilisateurs sous la forme d'un 
