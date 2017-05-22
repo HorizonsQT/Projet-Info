@@ -35,7 +35,7 @@
 <stop stop-opacity="1" stop-color="white" offset="0%"/>
 <stop stop-opacity="1" stop-color="rgb(232,239,247)" offset="100%"/>
 </linearGradient>
-<linearGradient x1="370" x2="562" y1="432" gradientUnits="userSpaceOnUse" y2="582" xlink:type="simple" xlink:actuate="onLoad" id="linearGradient9" xlink:show="other" spreadMethod="pad">
+<linearGradient x1="370" x2="562" y1="438" gradientUnits="userSpaceOnUse" y2="599" xlink:type="simple" xlink:actuate="onLoad" id="linearGradient9" xlink:show="other" spreadMethod="pad">
 <stop stop-opacity="1" stop-color="white" offset="0%"/>
 <stop stop-opacity="1" stop-color="rgb(232,239,247)" offset="100%"/>
 </linearGradient>
@@ -295,10 +295,10 @@
 <path d="M34 757 L311 757 L311 841 L34 841 L34 757 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath82">
-<path d="M369 452 L565 452 L565 564 L369 564 L369 452 Z"/>
+<path d="M369 452 L565 452 L565 587 L369 587 L369 452 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath83">
-<path d="M369 452 L563 452 L563 562 L369 562 L369 452 Z"/>
+<path d="M369 452 L563 452 L563 585 L369 585 L369 452 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath84">
 <path d="M424 457 L508 457 L508 475 L424 475 L424 457 Z"/>
@@ -319,240 +319,252 @@
 <path d="M374 496 L538 496 L538 514 L374 514 L374 496 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath90">
-<path d="M374 512 L443 512 L443 530 L374 530 L374 512 Z"/>
+<path d="M374 512 L551 512 L551 530 L374 530 L374 512 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath91">
-<path d="M374 512 L445 512 L445 530 L374 530 L374 512 Z"/>
+<path d="M374 512 L553 512 L553 530 L374 530 L374 512 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath92">
-<path d="M374 528 L459 528 L459 546 L374 546 L374 528 Z"/>
+<path d="M374 528 L443 528 L443 546 L374 546 L374 528 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath93">
-<path d="M374 528 L461 528 L461 546 L374 546 L374 528 Z"/>
+<path d="M374 528 L445 528 L445 546 L374 546 L374 528 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath94">
-<path d="M370 478 L562 478 L562 561 L370 561 L370 478 Z"/>
+<path d="M374 544 L459 544 L459 562 L374 562 L374 544 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath95">
-<path d="M45 9 L650 9 L650 386 L45 386 L45 9 Z"/>
+<path d="M374 544 L461 544 L461 562 L374 562 L374 544 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath96">
-<path d="M45 9 L648 9 L648 384 L45 384 L45 9 Z"/>
+<path d="M374 560 L459 560 L459 578 L374 578 L374 560 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath97">
-<path d="M46 14 L151 14 L151 32 L46 32 L46 14 Z"/>
+<path d="M374 560 L461 560 L461 578 L374 578 L374 560 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath98">
-<path d="M46 14 L154 14 L154 32 L46 32 L46 14 Z"/>
+<path d="M370 478 L562 478 L562 584 L370 584 L370 478 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath99">
-<path d="M57 40 L434 40 L434 374 L57 374 L57 40 Z"/>
+<path d="M45 9 L650 9 L650 386 L45 386 L45 9 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath100">
-<path d="M57 40 L432 40 L432 372 L57 372 L57 40 Z"/>
+<path d="M45 9 L648 9 L648 384 L45 384 L45 9 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath101">
-<path d="M189 45 L299 45 L299 63 L189 63 L189 45 Z"/>
+<path d="M46 14 L151 14 L151 32 L46 32 L46 14 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath102">
-<path d="M189 45 L301 45 L301 63 L189 63 L189 45 Z"/>
+<path d="M46 14 L154 14 L154 32 L46 32 L46 14 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath103">
-<path d="M62 68 L424 68 L424 94 L62 94 L62 68 Z"/>
+<path d="M57 40 L434 40 L434 374 L57 374 L57 40 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath104">
-<path d="M62 68 L426 68 L426 94 L62 94 L62 68 Z"/>
+<path d="M57 40 L432 40 L432 372 L57 372 L57 40 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath105">
-<path d="M62 92 L316 92 L316 110 L62 110 L62 92 Z"/>
+<path d="M189 45 L299 45 L299 63 L189 63 L189 45 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath106">
-<path d="M62 92 L318 92 L318 110 L62 110 L62 92 Z"/>
+<path d="M189 45 L301 45 L301 63 L189 63 L189 45 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath107">
-<path d="M62 108 L148 108 L148 126 L62 126 L62 108 Z"/>
+<path d="M62 68 L424 68 L424 94 L62 94 L62 68 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath108">
-<path d="M62 108 L150 108 L150 126 L62 126 L62 108 Z"/>
+<path d="M62 68 L426 68 L426 94 L62 94 L62 68 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath109">
-<path d="M62 124 L148 124 L148 142 L62 142 L62 124 Z"/>
+<path d="M62 92 L316 92 L316 110 L62 110 L62 92 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath110">
-<path d="M62 124 L150 124 L150 142 L62 142 L62 124 Z"/>
+<path d="M62 92 L318 92 L318 110 L62 110 L62 92 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath111">
-<path d="M62 140 L157 140 L157 158 L62 158 L62 140 Z"/>
+<path d="M62 108 L148 108 L148 126 L62 126 L62 108 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath112">
-<path d="M62 140 L159 140 L159 158 L62 158 L62 140 Z"/>
+<path d="M62 108 L150 108 L150 126 L62 126 L62 108 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath113">
-<path d="M62 156 L200 156 L200 174 L62 174 L62 156 Z"/>
+<path d="M62 124 L148 124 L148 142 L62 142 L62 124 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath114">
-<path d="M62 156 L202 156 L202 174 L62 174 L62 156 Z"/>
+<path d="M62 124 L150 124 L150 142 L62 142 L62 124 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath115">
-<path d="M62 172 L175 172 L175 190 L62 190 L62 172 Z"/>
+<path d="M62 140 L157 140 L157 158 L62 158 L62 140 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath116">
-<path d="M62 172 L177 172 L177 190 L62 190 L62 172 Z"/>
+<path d="M62 140 L159 140 L159 158 L62 158 L62 140 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath117">
-<path d="M62 188 L157 188 L157 206 L62 206 L62 188 Z"/>
+<path d="M62 156 L200 156 L200 174 L62 174 L62 156 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath118">
-<path d="M62 188 L159 188 L159 206 L62 206 L62 188 Z"/>
+<path d="M62 156 L202 156 L202 174 L62 174 L62 156 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath119">
-<path d="M62 204 L160 204 L160 222 L62 222 L62 204 Z"/>
+<path d="M62 172 L175 172 L175 190 L62 190 L62 172 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath120">
-<path d="M62 204 L162 204 L162 222 L62 222 L62 204 Z"/>
+<path d="M62 172 L177 172 L177 190 L62 190 L62 172 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath121">
-<path d="M62 220 L174 220 L174 238 L62 238 L62 220 Z"/>
+<path d="M62 188 L157 188 L157 206 L62 206 L62 188 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath122">
-<path d="M62 220 L176 220 L176 238 L62 238 L62 220 Z"/>
+<path d="M62 188 L159 188 L159 206 L62 206 L62 188 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath123">
-<path d="M62 236 L165 236 L165 254 L62 254 L62 236 Z"/>
+<path d="M62 204 L160 204 L160 222 L62 222 L62 204 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath124">
-<path d="M62 236 L167 236 L167 254 L62 254 L62 236 Z"/>
+<path d="M62 204 L162 204 L162 222 L62 222 L62 204 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath125">
-<path d="M62 252 L128 252 L128 270 L62 270 L62 252 Z"/>
+<path d="M62 220 L174 220 L174 238 L62 238 L62 220 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath126">
-<path d="M62 252 L130 252 L130 270 L62 270 L62 252 Z"/>
+<path d="M62 220 L176 220 L176 238 L62 238 L62 220 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath127">
-<path d="M62 268 L158 268 L158 286 L62 286 L62 268 Z"/>
+<path d="M62 236 L165 236 L165 254 L62 254 L62 236 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath128">
-<path d="M62 268 L160 268 L160 286 L62 286 L62 268 Z"/>
+<path d="M62 236 L167 236 L167 254 L62 254 L62 236 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath129">
-<path d="M62 284 L152 284 L152 302 L62 302 L62 284 Z"/>
+<path d="M62 252 L128 252 L128 270 L62 270 L62 252 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath130">
-<path d="M62 284 L154 284 L154 302 L62 302 L62 284 Z"/>
+<path d="M62 252 L130 252 L130 270 L62 270 L62 252 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath131">
-<path d="M62 300 L130 300 L130 318 L62 318 L62 300 Z"/>
+<path d="M62 268 L158 268 L158 286 L62 286 L62 268 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath132">
-<path d="M62 300 L132 300 L132 318 L62 318 L62 300 Z"/>
+<path d="M62 268 L160 268 L160 286 L62 286 L62 268 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath133">
-<path d="M62 316 L201 316 L201 334 L62 334 L62 316 Z"/>
+<path d="M62 284 L152 284 L152 302 L62 302 L62 284 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath134">
-<path d="M62 316 L203 316 L203 334 L62 334 L62 316 Z"/>
+<path d="M62 284 L154 284 L154 302 L62 302 L62 284 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath135">
-<path d="M62 332 L185 332 L185 350 L62 350 L62 332 Z"/>
+<path d="M62 300 L130 300 L130 318 L62 318 L62 300 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath136">
-<path d="M62 332 L187 332 L187 350 L62 350 L62 332 Z"/>
+<path d="M62 300 L132 300 L132 318 L62 318 L62 300 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath137">
-<path d="M62 348 L158 348 L158 366 L62 366 L62 348 Z"/>
+<path d="M62 316 L201 316 L201 334 L62 334 L62 316 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath138">
-<path d="M62 348 L160 348 L160 366 L62 366 L62 348 Z"/>
+<path d="M62 316 L203 316 L203 334 L62 334 L62 316 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath139">
-<path d="M58 66 L431 66 L431 371 L58 371 L58 66 Z"/>
+<path d="M62 332 L185 332 L185 350 L62 350 L62 332 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath140">
-<path d="M477 129 L630 129 L630 264 L477 264 L477 129 Z"/>
+<path d="M62 332 L187 332 L187 350 L62 350 L62 332 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath141">
-<path d="M477 129 L628 129 L628 262 L477 262 L477 129 Z"/>
+<path d="M62 348 L158 348 L158 366 L62 366 L62 348 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath142">
-<path d="M499 134 L605 134 L605 152 L499 152 L499 134 Z"/>
+<path d="M62 348 L160 348 L160 366 L62 366 L62 348 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath143">
-<path d="M499 134 L608 134 L608 152 L499 152 L499 134 Z"/>
+<path d="M58 66 L431 66 L431 371 L58 371 L58 66 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath144">
-<path d="M482 157 L599 157 L599 183 L482 183 L482 157 Z"/>
+<path d="M477 129 L630 129 L630 264 L477 264 L477 129 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath145">
-<path d="M482 157 L601 157 L601 183 L482 183 L482 157 Z"/>
+<path d="M477 129 L628 129 L628 262 L477 262 L477 129 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath146">
-<path d="M482 181 L530 181 L530 199 L482 199 L482 181 Z"/>
+<path d="M499 134 L605 134 L605 152 L499 152 L499 134 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath147">
-<path d="M482 181 L532 181 L532 199 L482 199 L482 181 Z"/>
+<path d="M499 134 L608 134 L608 152 L499 152 L499 134 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath148">
-<path d="M478 155 L627 155 L627 261 L478 261 L478 155 Z"/>
+<path d="M482 157 L599 157 L599 183 L482 183 L482 157 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath149">
-<path d="M-1 -1 L768 -1 L768 876 L-1 876 L-1 -1 Z"/>
+<path d="M482 157 L601 157 L601 183 L482 183 L482 157 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath150">
-<path d="M368 785 L417 785 L417 799 L368 799 L368 785 Z"/>
+<path d="M482 181 L530 181 L530 199 L482 199 L482 181 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath151">
-<path d="M321 810 L433 810 L433 824 L321 824 L321 810 Z"/>
+<path d="M482 181 L532 181 L532 199 L482 199 L482 181 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath152">
-<path d="M336 731 L410 731 L410 745 L336 745 L336 731 Z"/>
+<path d="M478 155 L627 155 L627 261 L478 261 L478 155 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath153">
-<path d="M414 725 L423 725 L423 735 L414 735 L414 725 Z"/>
+<path d="M-1 -1 L768 -1 L768 876 L-1 876 L-1 -1 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath154">
-<path d="M26 625 L75 625 L75 639 L26 639 L26 625 Z"/>
-</clipPath>
-<clipPath clipPathUnits="userSpaceOnUse" id="clipPath155">
-<path d="M75 599 L125 599 L125 613 L75 613 L75 599 Z"/>
-</clipPath>
-<clipPath clipPathUnits="userSpaceOnUse" id="clipPath156">
-<path d="M52 666 L115 666 L115 680 L52 680 L52 666 Z"/>
-</clipPath>
-<clipPath clipPathUnits="userSpaceOnUse" id="clipPath157">
-<path d="M110 649 L120 649 L120 658 L110 658 L110 649 Z"/>
-</clipPath>
-<clipPath clipPathUnits="userSpaceOnUse" id="clipPath158">
 <path d="M266 583 L277 583 L277 594 L266 594 L266 583 Z"/>
 </clipPath>
-<clipPath clipPathUnits="userSpaceOnUse" id="clipPath159">
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath155">
 <path d="M441 417 L560 417 L560 431 L441 431 L441 417 Z"/>
 </clipPath>
-<clipPath clipPathUnits="userSpaceOnUse" id="clipPath160">
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath156">
 <path d="M573 415 L631 415 L631 429 L573 429 L573 415 Z"/>
 </clipPath>
-<clipPath clipPathUnits="userSpaceOnUse" id="clipPath161">
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath157">
 <path d="M405 441 L479 441 L479 455 L405 455 L405 441 Z"/>
 </clipPath>
-<clipPath clipPathUnits="userSpaceOnUse" id="clipPath162">
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath158">
 <path d="M486 445 L495 445 L495 455 L486 455 L486 445 Z"/>
 </clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath159">
+<path d="M368 785 L417 785 L417 799 L368 799 L368 785 Z"/>
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath160">
+<path d="M321 810 L433 810 L433 824 L321 824 L321 810 Z"/>
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath161">
+<path d="M336 731 L410 731 L410 745 L336 745 L336 731 Z"/>
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath162">
+<path d="M414 725 L423 725 L423 735 L414 735 L414 725 Z"/>
+</clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath163">
-<path d="M430 185 L441 185 L441 196 L430 196 L430 185 Z"/>
+<path d="M26 625 L75 625 L75 639 L26 639 L26 625 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath164">
-<path d="M669 351 L714 351 L714 365 L669 365 L669 351 Z"/>
+<path d="M75 599 L125 599 L125 613 L75 613 L75 599 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath165">
-<path d="M650 254 L738 254 L738 268 L650 268 L650 254 Z"/>
+<path d="M52 666 L115 666 L115 680 L52 680 L52 666 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath166">
-<path d="M631 402 L685 402 L685 416 L631 416 L631 402 Z"/>
+<path d="M110 649 L120 649 L120 658 L110 658 L110 649 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath167">
-<path d="M623 260 L631 260 L631 274 L623 274 L623 260 Z"/>
+<path d="M430 185 L441 185 L441 196 L430 196 L430 185 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath168">
+<path d="M669 351 L714 351 L714 365 L669 365 L669 351 Z"/>
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath169">
+<path d="M650 254 L738 254 L738 268 L650 268 L650 254 Z"/>
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath170">
+<path d="M631 402 L685 402 L685 416 L631 416 L631 402 Z"/>
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath171">
+<path d="M623 260 L631 260 L631 274 L623 274 L623 260 Z"/>
+</clipPath>
+<clipPath clipPathUnits="userSpaceOnUse" id="clipPath172">
 <path d="M688 418 L696 418 L696 429 L688 429 L688 418 Z"/>
 </clipPath>
 </defs>
@@ -681,10 +693,10 @@
 </g>
 <g stroke-linecap="butt" fill="rgb(39,76,114)" font-family="'Ubuntu'" stroke="rgb(39,76,114)" font-weight="bold" stroke-width="1.1">
 <line clip-path="url(#clipPath81)" fill="none" x1="35" x2="310" y1="758" y2="758"/>
-<rect x="371" y="454" clip-path="url(#clipPath82)" fill="rgb(131,122,133)" width="192" rx="2.5" opacity="0.2549" ry="2.5" height="108" stroke="none"/>
-<rect x="372" y="455" clip-path="url(#clipPath82)" fill="rgb(131,122,133)" width="192" rx="2.5" opacity="0.2549" ry="2.5" height="108" stroke="none"/>
-<rect x="370" y="453" clip-path="url(#clipPath83)" fill="url(#linearGradient9)" width="192" rx="2.5" ry="2.5" height="108" stroke="none"/>
-<rect x="370" y="453" clip-path="url(#clipPath83)" fill="none" width="191" rx="2.5" ry="2.5" height="107"/>
+<rect x="371" y="454" clip-path="url(#clipPath82)" fill="rgb(131,122,133)" width="192" rx="2.5" opacity="0.2549" ry="2.5" height="131" stroke="none"/>
+<rect x="372" y="455" clip-path="url(#clipPath82)" fill="rgb(131,122,133)" width="192" rx="2.5" opacity="0.2549" ry="2.5" height="131" stroke="none"/>
+<rect x="370" y="453" clip-path="url(#clipPath83)" fill="url(#linearGradient9)" width="192" rx="2.5" ry="2.5" height="131" stroke="none"/>
+<rect x="370" y="453" clip-path="url(#clipPath83)" fill="none" width="191" rx="2.5" ry="2.5" height="130"/>
 <image x="425" y="458" clip-path="url(#clipPath84)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAr0lEQVR42mNkgIKC&#10;BUf+P3jyCchiBOL/QMgIYTFCREDg/38GOFCU4WWYkGDDyAITuP/4E8OkNDsGYkHu&#10;rINgGm7Av7//GNjZmIk2gOHff1QDwBxmJgZSAZoBjJQZwEqRC4BBzEqCC/6hh8H/&#10;//8YmJmIN+D/fyyB6NewCZwO/qORMIBIIUA2IyOmAUsrvIh2QUzndjBNeqjhiwWY&#10;qWQbsKTccwC9oKIkTJIXQOqpAgBzFjJ6SnHW0gAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
 <text x="444" y="471" clip-path="url(#clipPath85)" fill="black" stroke="none" xml:space="preserve">Couple_DB</text>
 </g>
@@ -693,183 +705,187 @@
 <text xml:space="preserve" x="394" y="494" clip-path="url(#clipPath87)" stroke="none">Utilisateur_HashMap : EMap [1]</text>
 <image x="375" y="497" clip-path="url(#clipPath88)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8klEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDpkA8DyVpXr/69tCGAI&#10;rl+P4l8QONoWiDdAIV4A2gwKxJUNgQyMaIEGAqc87PEbAApVt/KVCOciue/KhHCG&#10;/9feMejGB2BovrxwA8SAqxMjGHFaMSH8P0wxThcQAuaPLtMuLwAATIhxVYxYyT0A&#10;AAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
 <text xml:space="preserve" x="394" y="510" clip-path="url(#clipPath89)" stroke="none">Groupe_HashMap : EMap [1]</text>
-<image x="375" y="513" clip-path="url(#clipPath90)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="394" y="526" clip-path="url(#clipPath91)" stroke="none">groupes()</text>
+<image x="375" y="513" clip-path="url(#clipPath90)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8klEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDpkA8DyVpXr/69tCGAI&#10;rl+P4l8QONoWiDdAIV4A2gwKxJUNgQyMaIEGAqc87PEbAApVt/KVCOciue/KhHCG&#10;/9feMejGB2BovrxwA8SAqxMjGHFaMSH8P0wxThcQAuaPLtMuLwAATIhxVYxYyT0A&#10;AAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="394" y="526" clip-path="url(#clipPath91)" stroke="none">Contrainte_hashMap : EMap [1]</text>
 <image x="375" y="529" clip-path="url(#clipPath92)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="394" y="542" clip-path="url(#clipPath93)" stroke="none">utilisateurs()</text>
+<text xml:space="preserve" x="394" y="542" clip-path="url(#clipPath93)" stroke="none">groupes()</text>
+<image x="375" y="545" clip-path="url(#clipPath94)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="394" y="558" clip-path="url(#clipPath95)" stroke="none">utilisateurs()</text>
+<image x="375" y="561" clip-path="url(#clipPath96)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="394" y="574" clip-path="url(#clipPath97)" stroke="none">contraintes()</text>
 </g>
 <g stroke-linecap="butt" fill="rgb(39,76,114)" font-family="'Ubuntu'" stroke="rgb(39,76,114)" font-weight="bold" stroke-width="1.1">
-<line clip-path="url(#clipPath94)" fill="none" x1="371" x2="561" y1="479" y2="479"/>
+<line clip-path="url(#clipPath98)" fill="none" x1="371" x2="561" y1="479" y2="479"/>
 <line clip-path="url(#clipPath1)" fill="none" x1="11" x2="91" y1="420" y2="420"/>
 <line clip-path="url(#clipPath1)" fill="none" x1="91" x2="91" y1="420" y2="420"/>
 <line clip-path="url(#clipPath1)" fill="none" x1="91" x2="96" y1="420" y2="415"/>
 <line clip-path="url(#clipPath1)" fill="none" x1="96" x2="96" y1="415" y2="415"/>
 <line clip-path="url(#clipPath1)" fill="none" x1="96" x2="96" y1="415" y2="394"/>
-<rect x="47" y="11" clip-path="url(#clipPath95)" fill="rgb(131,122,133)" width="601" rx="2.5" opacity="0.2549" ry="2.5" height="373" stroke="none"/>
-<rect x="48" y="12" clip-path="url(#clipPath95)" fill="rgb(131,122,133)" width="601" rx="2.5" opacity="0.2549" ry="2.5" height="373" stroke="none"/>
-<rect x="46" y="10" clip-path="url(#clipPath96)" fill="url(#linearGradient10)" width="601" rx="2.5" ry="2.5" height="373" stroke="none"/>
-<rect x="46" y="10" clip-path="url(#clipPath96)" fill="none" width="600" rx="2.5" ry="2.5" height="372"/>
-<image x="47" y="15" clip-path="url(#clipPath97)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWUlEQVR42mNgGPKA&#10;EUQoZCz4j0vBgxkJjPgMYIEx7k+Px5BUzFxIuQvwAZDr4C7YUBdAkuaApg2oXgAB&#10;MV5+kl3BRGksoLiAnZlCA5gZKTWAiQIDYKE6AgEAAu0P6M4KKrgAAAAASUVORK5C&#10;YII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text x="66" y="28" clip-path="url(#clipPath98)" fill="black" stroke="none" xml:space="preserve">userController</text>
-<rect x="59" y="42" clip-path="url(#clipPath99)" fill="rgb(131,122,133)" width="373" rx="2.5" opacity="0.2549" ry="2.5" height="330" stroke="none"/>
-<rect x="60" y="43" clip-path="url(#clipPath99)" fill="rgb(131,122,133)" width="373" rx="2.5" opacity="0.2549" ry="2.5" height="330" stroke="none"/>
-<rect x="58" y="41" clip-path="url(#clipPath100)" fill="url(#linearGradient11)" width="373" rx="2.5" ry="2.5" height="330" stroke="none"/>
-<rect x="58" y="41" clip-path="url(#clipPath100)" fill="none" width="372" rx="2.5" ry="2.5" height="329" stroke="rgb(173,127,168)"/>
-<image stroke="rgb(173,127,168)" width="16" xlink:show="embed" xlink:type="simple" fill="rgb(173,127,168)" clip-path="url(#clipPath101)" preserveAspectRatio="none" height="16" x="190" y="46" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR42mNkgIKC&#10;BUf+P3jyCchiBOL/QMgIYTFCREDg/38GOFCU4WWYkGDDyAITuP/4E8OkNDsGYkHu&#10;rINgGm7Av7//GNjZmMHsEzceMVhoyDFYVK6EazjRHg4Xh2iAOIcJ2VQWZiawooKF&#10;x8HsM12RYHEQDeKDxEHyIDYMoBnACFZ0oTcKzAZhmDgIg8QhhjNiN4AVaPKEeEsG&#10;g+JlYDYr1CYYGyQOkmfF6gJgELMCTfYyUYEqYmTQLlgClgLRID5IHCQPYv+DhgEL&#10;Qv8/BmYmiNN8zVTB9N2pcSghDxOHqEczAAT8GjaB08F/NBIGECkEyGZkxDRgaYUX&#10;0ekgpnM7ZiCSA1iwmUq2AUvKPQfQCypKwiR5AaSeKgAABcZdRqE6GaQAAAAASUVO&#10;RK5CYII=" xlink:actuate="onLoad"/>
-<text x="209" y="59" clip-path="url(#clipPath102)" fill="black" stroke="none" xml:space="preserve">IUserController</text>
+<rect x="47" y="11" clip-path="url(#clipPath99)" fill="rgb(131,122,133)" width="601" rx="2.5" opacity="0.2549" ry="2.5" height="373" stroke="none"/>
+<rect x="48" y="12" clip-path="url(#clipPath99)" fill="rgb(131,122,133)" width="601" rx="2.5" opacity="0.2549" ry="2.5" height="373" stroke="none"/>
+<rect x="46" y="10" clip-path="url(#clipPath100)" fill="url(#linearGradient10)" width="601" rx="2.5" ry="2.5" height="373" stroke="none"/>
+<rect x="46" y="10" clip-path="url(#clipPath100)" fill="none" width="600" rx="2.5" ry="2.5" height="372"/>
+<image x="47" y="15" clip-path="url(#clipPath101)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWUlEQVR42mNgGPKA&#10;EUQoZCz4j0vBgxkJjPgMYIEx7k+Px5BUzFxIuQvwAZDr4C7YUBdAkuaApg2oXgAB&#10;MV5+kl3BRGksoLiAnZlCA5gZKTWAiQIDYKE6AgEAAu0P6M4KKrgAAAAASUVORK5C&#10;YII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text x="66" y="28" clip-path="url(#clipPath102)" fill="black" stroke="none" xml:space="preserve">userController</text>
+<rect x="59" y="42" clip-path="url(#clipPath103)" fill="rgb(131,122,133)" width="373" rx="2.5" opacity="0.2549" ry="2.5" height="330" stroke="none"/>
+<rect x="60" y="43" clip-path="url(#clipPath103)" fill="rgb(131,122,133)" width="373" rx="2.5" opacity="0.2549" ry="2.5" height="330" stroke="none"/>
+<rect x="58" y="41" clip-path="url(#clipPath104)" fill="url(#linearGradient11)" width="373" rx="2.5" ry="2.5" height="330" stroke="none"/>
+<rect x="58" y="41" clip-path="url(#clipPath104)" fill="none" width="372" rx="2.5" ry="2.5" height="329" stroke="rgb(173,127,168)"/>
+<image stroke="rgb(173,127,168)" width="16" xlink:show="embed" xlink:type="simple" fill="rgb(173,127,168)" clip-path="url(#clipPath105)" preserveAspectRatio="none" height="16" x="190" y="46" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR42mNkgIKC&#10;BUf+P3jyCchiBOL/QMgIYTFCREDg/38GOFCU4WWYkGDDyAITuP/4E8OkNDsGYkHu&#10;rINgGm7Av7//GNjZmMHsEzceMVhoyDFYVK6EazjRHg4Xh2iAOIcJ2VQWZiawooKF&#10;x8HsM12RYHEQDeKDxEHyIDYMoBnACFZ0oTcKzAZhmDgIg8QhhjNiN4AVaPKEeEsG&#10;g+JlYDYr1CYYGyQOkmfF6gJgELMCTfYyUYEqYmTQLlgClgLRID5IHCQPYv+DhgEL&#10;Qv8/BmYmiNN8zVTB9N2pcSghDxOHqEczAAT8GjaB08F/NBIGECkEyGZkxDRgaYUX&#10;0ekgpnM7ZiCSA1iwmUq2AUvKPQfQCypKwiR5AaSeKgAABcZdRqE6GaQAAAAASUVO&#10;RK5CYII=" xlink:actuate="onLoad"/>
+<text x="209" y="59" clip-path="url(#clipPath106)" fill="black" stroke="none" xml:space="preserve">IUserController</text>
 </g>
 <g stroke-width="1.1" font-size="11" font-family="'Ubuntu'" stroke-linecap="butt">
-<image x="63" y="73" clip-path="url(#clipPath103)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="80" clip-path="url(#clipPath104)" stroke="none">addAdmin(adminLogin : EString, NewAdminLogin : EString, adminID : </text>
-<text xml:space="preserve" x="82" y="92" clip-path="url(#clipPath104)" stroke="none">Integer, firstname : String, surname : String, password : String)</text>
-<image x="63" y="93" clip-path="url(#clipPath105)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="106" clip-path="url(#clipPath106)" stroke="none">addGroup(adminLogin : String, groupID : String)</text>
-<image x="63" y="109" clip-path="url(#clipPath107)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="122" clip-path="url(#clipPath108)" stroke="none">addTeacher()</text>
-<image x="63" y="125" clip-path="url(#clipPath109)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="138" clip-path="url(#clipPath110)" stroke="none">addStudent()</text>
-<image x="63" y="141" clip-path="url(#clipPath111)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="154" clip-path="url(#clipPath112)" stroke="none">getUserClass()</text>
-<image x="63" y="157" clip-path="url(#clipPath113)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="170" clip-path="url(#clipPath114)" stroke="none">associateStudToGroup()</text>
-<image x="63" y="173" clip-path="url(#clipPath115)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="186" clip-path="url(#clipPath116)" stroke="none">getStudentGroup()</text>
-<image x="63" y="189" clip-path="url(#clipPath117)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="202" clip-path="url(#clipPath118)" stroke="none">getUserClass()</text>
-<image x="63" y="205" clip-path="url(#clipPath119)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="218" clip-path="url(#clipPath120)" stroke="none">getUserName()</text>
-<image x="63" y="221" clip-path="url(#clipPath121)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="234" clip-path="url(#clipPath122)" stroke="none">groupsIdToString()</text>
-<image x="63" y="237" clip-path="url(#clipPath123)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="250" clip-path="url(#clipPath124)" stroke="none">groupsToString()</text>
-<image x="63" y="253" clip-path="url(#clipPath125)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="266" clip-path="url(#clipPath126)" stroke="none">loadDB()</text>
-<image x="63" y="269" clip-path="url(#clipPath127)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="282" clip-path="url(#clipPath128)" stroke="none">removeGroup()</text>
-<image x="63" y="285" clip-path="url(#clipPath129)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="298" clip-path="url(#clipPath130)" stroke="none">removeUser()</text>
-<image x="63" y="301" clip-path="url(#clipPath131)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="314" clip-path="url(#clipPath132)" stroke="none">saveDB()</text>
-<image x="63" y="317" clip-path="url(#clipPath133)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="330" clip-path="url(#clipPath134)" stroke="none">studentsLoginToString()</text>
-<image x="63" y="333" clip-path="url(#clipPath135)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="346" clip-path="url(#clipPath136)" stroke="none">usersLoginToString()</text>
-<image x="63" y="349" clip-path="url(#clipPath137)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="82" y="362" clip-path="url(#clipPath138)" stroke="none">usersToString()</text>
+<image x="63" y="73" clip-path="url(#clipPath107)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="80" clip-path="url(#clipPath108)" stroke="none">addAdmin(adminLogin : EString, NewAdminLogin : EString, adminID : </text>
+<text xml:space="preserve" x="82" y="92" clip-path="url(#clipPath108)" stroke="none">Integer, firstname : String, surname : String, password : String)</text>
+<image x="63" y="93" clip-path="url(#clipPath109)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="106" clip-path="url(#clipPath110)" stroke="none">addGroup(adminLogin : String, groupID : String)</text>
+<image x="63" y="109" clip-path="url(#clipPath111)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="122" clip-path="url(#clipPath112)" stroke="none">addTeacher()</text>
+<image x="63" y="125" clip-path="url(#clipPath113)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="138" clip-path="url(#clipPath114)" stroke="none">addStudent()</text>
+<image x="63" y="141" clip-path="url(#clipPath115)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="154" clip-path="url(#clipPath116)" stroke="none">getUserClass()</text>
+<image x="63" y="157" clip-path="url(#clipPath117)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="170" clip-path="url(#clipPath118)" stroke="none">associateStudToGroup()</text>
+<image x="63" y="173" clip-path="url(#clipPath119)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="186" clip-path="url(#clipPath120)" stroke="none">getStudentGroup()</text>
+<image x="63" y="189" clip-path="url(#clipPath121)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="202" clip-path="url(#clipPath122)" stroke="none">getUserClass()</text>
+<image x="63" y="205" clip-path="url(#clipPath123)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="218" clip-path="url(#clipPath124)" stroke="none">getUserName()</text>
+<image x="63" y="221" clip-path="url(#clipPath125)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="234" clip-path="url(#clipPath126)" stroke="none">groupsIdToString()</text>
+<image x="63" y="237" clip-path="url(#clipPath127)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="250" clip-path="url(#clipPath128)" stroke="none">groupsToString()</text>
+<image x="63" y="253" clip-path="url(#clipPath129)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="266" clip-path="url(#clipPath130)" stroke="none">loadDB()</text>
+<image x="63" y="269" clip-path="url(#clipPath131)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="282" clip-path="url(#clipPath132)" stroke="none">removeGroup()</text>
+<image x="63" y="285" clip-path="url(#clipPath133)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="298" clip-path="url(#clipPath134)" stroke="none">removeUser()</text>
+<image x="63" y="301" clip-path="url(#clipPath135)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="314" clip-path="url(#clipPath136)" stroke="none">saveDB()</text>
+<image x="63" y="317" clip-path="url(#clipPath137)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="330" clip-path="url(#clipPath138)" stroke="none">studentsLoginToString()</text>
+<image x="63" y="333" clip-path="url(#clipPath139)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="346" clip-path="url(#clipPath140)" stroke="none">usersLoginToString()</text>
+<image x="63" y="349" clip-path="url(#clipPath141)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="82" y="362" clip-path="url(#clipPath142)" stroke="none">usersToString()</text>
 </g>
 <g stroke-linecap="butt" fill="rgb(173,127,168)" font-family="'Ubuntu'" stroke="rgb(173,127,168)" font-weight="bold" stroke-width="1.1">
-<line clip-path="url(#clipPath139)" fill="none" x1="59" x2="430" y1="67" y2="67"/>
-<rect x="479" y="131" clip-path="url(#clipPath140)" fill="rgb(131,122,133)" width="149" rx="2.5" opacity="0.2549" ry="2.5" height="131" stroke="none"/>
-<rect x="480" y="132" clip-path="url(#clipPath140)" fill="rgb(131,122,133)" width="149" rx="2.5" opacity="0.2549" ry="2.5" height="131" stroke="none"/>
-<rect x="478" y="130" clip-path="url(#clipPath141)" fill="url(#linearGradient12)" width="149" rx="2.5" ry="2.5" height="131" stroke="none"/>
-<rect x="478" y="130" clip-path="url(#clipPath141)" fill="none" width="148" rx="2.5" ry="2.5" height="130" stroke="rgb(39,76,114)"/>
-<image stroke="rgb(39,76,114)" width="16" xlink:show="embed" xlink:type="simple" fill="rgb(39,76,114)" clip-path="url(#clipPath142)" preserveAspectRatio="none" height="16" x="500" y="135" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAr0lEQVR42mNkgIKC&#10;BUf+P3jyCchiBOL/QMgIYTFCREDg/38GOFCU4WWYkGDDyAITuP/4E8OkNDsGYkHu&#10;rINgGm7Av7//GNjZmIk2gOHff1QDwBxmJgZSAZoBjJQZwEqRC4BBzEqCC/6hh8H/&#10;//8YmJmIN+D/fyyB6NewCZwO/qORMIBIIUA2IyOmAUsrvIh2QUzndjBNeqjhiwWY&#10;qWQbsKTccwC9oKIkTJIXQOqpAgBzFjJ6SnHW0gAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
-<text x="519" y="148" clip-path="url(#clipPath143)" fill="black" stroke="none" xml:space="preserve">UserController</text>
+<line clip-path="url(#clipPath143)" fill="none" x1="59" x2="430" y1="67" y2="67"/>
+<rect x="479" y="131" clip-path="url(#clipPath144)" fill="rgb(131,122,133)" width="149" rx="2.5" opacity="0.2549" ry="2.5" height="131" stroke="none"/>
+<rect x="480" y="132" clip-path="url(#clipPath144)" fill="rgb(131,122,133)" width="149" rx="2.5" opacity="0.2549" ry="2.5" height="131" stroke="none"/>
+<rect x="478" y="130" clip-path="url(#clipPath145)" fill="url(#linearGradient12)" width="149" rx="2.5" ry="2.5" height="131" stroke="none"/>
+<rect x="478" y="130" clip-path="url(#clipPath145)" fill="none" width="148" rx="2.5" ry="2.5" height="130" stroke="rgb(39,76,114)"/>
+<image stroke="rgb(39,76,114)" width="16" xlink:show="embed" xlink:type="simple" fill="rgb(39,76,114)" clip-path="url(#clipPath146)" preserveAspectRatio="none" height="16" x="500" y="135" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAr0lEQVR42mNkgIKC&#10;BUf+P3jyCchiBOL/QMgIYTFCREDg/38GOFCU4WWYkGDDyAITuP/4E8OkNDsGYkHu&#10;rINgGm7Av7//GNjZmIk2gOHff1QDwBxmJgZSAZoBjJQZwEqRC4BBzEqCC/6hh8H/&#10;//8YmJmIN+D/fyyB6NewCZwO/qORMIBIIUA2IyOmAUsrvIh2QUzndjBNeqjhiwWY&#10;qWQbsKTccwC9oKIkTJIXQOqpAgBzFjJ6SnHW0gAAAABJRU5ErkJggg==" xlink:actuate="onLoad"/>
+<text x="519" y="148" clip-path="url(#clipPath147)" fill="black" stroke="none" xml:space="preserve">UserController</text>
 </g>
 <g stroke-width="1.1" font-size="11" font-family="'Ubuntu'" stroke-linecap="butt">
-<image x="483" y="162" clip-path="url(#clipPath144)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="502" y="169" clip-path="url(#clipPath145)" stroke="none">Base_de_donnees : </text>
-<text xml:space="preserve" x="502" y="181" clip-path="url(#clipPath145)" stroke="none">String [1]</text>
-<image x="483" y="182" clip-path="url(#clipPath146)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
-<text xml:space="preserve" x="502" y="195" clip-path="url(#clipPath147)" stroke="none">Ibid()</text>
+<image x="483" y="162" clip-path="url(#clipPath148)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVR42mNgGAWM&#10;ICJr1qH/pGqclmYH1ssCIn7/+ccwI8OeaM0ZMw/C2WADfgIN+At0Q8rUfRDR/zC3&#10;obGBYE62E8Ov339RDfjx6w/DHyjdne2G0+aSqbsZ/gAN/I5uwPefQAP+gWiIhCAL&#10;Ugj9R9Bgi/5D1KMY8A0o8Qso8e03ROL3f4g+EMEI88Z/hDoMA77/+gvW9P3HH4bI&#10;pvXYowtkKNC0P1CDUA0A2gwKxJUNgWCFyIGGHJAg6g/YK2hhAApVt/KVCOcyoIUB&#10;SqpBExv6AAAA13L8DwBmYwAAAABJRU5ErkJggg==" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="502" y="169" clip-path="url(#clipPath149)" stroke="none">Base_de_donnees : </text>
+<text xml:space="preserve" x="502" y="181" clip-path="url(#clipPath149)" stroke="none">String [1]</text>
+<image x="483" y="182" clip-path="url(#clipPath150)" width="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42sVTX0hT&#10;URz+7p3OCIqkaMLq0R6CCIRMaCMyr9ushkT17Fq9RNk/iJBk5z5s+BAhBQYh6Hyp&#10;B5W0NufcbCuNFcToIQrxz5g0IsVE5u52d+89HScMYw56CPo9nHN+/L7z8fGd7wD/&#10;u3TlBgIJ0nmlmljb3GQ2OiCWw/FbmyYxQGG+SzfOE+HXePfkNgLhwc3hiZvUSsK0&#10;rAKLK0gnwq8w+fA6vF950v/gCnZWVaGxoQ4jC3oy+agdnU/7IVzuIvNRb1ERV5Ri&#10;aqejXTcASsFxKjRaCbaggtfYtAIKVIbWcO5+DzD1mCtRQJMfxBczHGk1NSCfB3yx&#10;OGYWF/ElkcLBmhrICnCxswd0y+UigcUVonPqHuK+5kClTofI5zhjVNDr/4RjtUbM&#10;/kjhQLUBx48cRWhpB2l2uslcZNPYgonjzDDP1TZsqFxeyUHTFPSNxRH1nMez8Rh4&#10;lcP31RwUlcLjdCAYfPnnK9iEs+joHUBiOYOVjASOee04U4dTHUNw2uqh8TqsrctI&#10;/FpnuD4IFjtKTCwUM9JxoRW8wnjlFGOn0BiE0xug6vTwDg5Bm+7mtg+S+Ra1t7RA&#10;zgGSKiNHdyPNVbJ9FyRNRUZWcfhQLb7l9xEkY2JJkMwnGzHq92E1l8XImA8/M2ms&#10;ScCSlMWwP4h0VsJwwI/TTbbtg5R8+1ysv3SPTE9FCk+VpPvJXqMRHyOsf9/NLagG&#10;Igh2hFwC91efxOp6Q2G6Q5vF0vj+0/oNRdDxkTDUjqQAAAAASUVORK5CYII=" xlink:type="simple" xlink:actuate="onLoad" height="16" preserveAspectRatio="none" xlink:show="embed"/>
+<text xml:space="preserve" x="502" y="195" clip-path="url(#clipPath151)" stroke="none">Ibid()</text>
 </g>
 <g stroke-linecap="butt" fill="rgb(39,76,114)" font-family="'Ubuntu'" stroke="rgb(39,76,114)" font-weight="bold" stroke-width="1.1">
-<line clip-path="url(#clipPath148)" fill="none" x1="479" x2="626" y1="156" y2="156"/>
-<line clip-path="url(#clipPath95)" fill="none" x1="47" x2="150" y1="36" y2="36"/>
-<line clip-path="url(#clipPath95)" fill="none" x1="150" x2="150" y1="36" y2="36"/>
-<line clip-path="url(#clipPath95)" fill="none" x1="150" x2="155" y1="36" y2="31"/>
-<line clip-path="url(#clipPath95)" fill="none" x1="155" x2="155" y1="31" y2="31"/>
-<line clip-path="url(#clipPath95)" fill="none" x1="155" x2="155" y1="31" y2="10"/>
+<line clip-path="url(#clipPath152)" fill="none" x1="479" x2="626" y1="156" y2="156"/>
+<line clip-path="url(#clipPath99)" fill="none" x1="47" x2="150" y1="36" y2="36"/>
+<line clip-path="url(#clipPath99)" fill="none" x1="150" x2="150" y1="36" y2="36"/>
+<line clip-path="url(#clipPath99)" fill="none" x1="150" x2="155" y1="36" y2="31"/>
+<line clip-path="url(#clipPath99)" fill="none" x1="155" x2="155" y1="31" y2="31"/>
+<line clip-path="url(#clipPath99)" fill="none" x1="155" x2="155" y1="31" y2="10"/>
 </g>
 <g stroke-linecap="butt" font-size="11" fill="rgb(136,136,136)" font-family="'Ubuntu'" stroke="rgb(136,136,136)" stroke-width="1.1">
-<line clip-path="url(#clipPath149)" fill="none" x1="311" x2="418" y1="802" y2="802"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="418" x2="418" y1="802" y2="726"/>
-<text x="369" y="797" clip-path="url(#clipPath150)" fill="black" stroke="none" xml:space="preserve">Refers to</text>
-<text x="322" y="822" clip-path="url(#clipPath151)" fill="black" stroke="none" xml:space="preserve">contrainte_horaires[*]</text>
-<text x="337" y="743" clip-path="url(#clipPath152)" fill="black" stroke="none" xml:space="preserve">professeurs[*]</text>
-<line clip-path="url(#clipPath153)" fill="none" x1="421" x2="418" y1="733" y2="726"/>
-<line clip-path="url(#clipPath153)" fill="none" x1="418" x2="415" y1="726" y2="733"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="59" x2="82" y1="591" y2="653"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="82" x2="118" y1="653" y2="653"/>
-<text x="27" y="637" clip-path="url(#clipPath154)" fill="black" stroke="none" xml:space="preserve">Refers to</text>
-<text x="76" y="611" clip-path="url(#clipPath155)" fill="black" stroke="none" xml:space="preserve">groups[*]</text>
-<text x="53" y="678" clip-path="url(#clipPath156)" fill="black" stroke="none" xml:space="preserve">etudiants[*]</text>
-<line clip-path="url(#clipPath157)" fill="none" x1="111" x2="118" y1="656" y2="653"/>
-<line clip-path="url(#clipPath157)" fill="none" x1="118" x2="111" y1="653" y2="650"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="238" x2="238" y1="641" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="238" x2="271" y1="602" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
-<polygon fill="white" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="332" x2="332" y1="642" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="332" x2="271" y1="602" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
-<polygon fill="white" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="586" x2="514" y1="442" y2="442"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="514" x2="490" y1="442" y2="442"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="490" x2="490" y1="442" y2="453"/>
-<text x="442" y="429" clip-path="url(#clipPath159)" fill="black" stroke="none" xml:space="preserve">A_userDBs_couple_DBs</text>
-<text x="574" y="427" clip-path="url(#clipPath160)" fill="black" stroke="none" xml:space="preserve">userDBs[*]</text>
-<text x="406" y="453" clip-path="url(#clipPath161)" fill="black" stroke="none" xml:space="preserve">couple_DBs[*]</text>
-<line clip-path="url(#clipPath162)" fill="none" x1="487" x2="490" y1="446" y2="453"/>
-<line clip-path="url(#clipPath162)" fill="none" x1="490" x2="493" y1="453" y2="446"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="577" x2="577" y1="646" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="577" x2="271" y1="602" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
-<polygon fill="white" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="478" x2="431" y1="193" y2="189" stroke-dasharray="5,5"/>
-<polygon fill="white" stroke-dasharray="5,5" clip-path="url(#clipPath163)" points=" 431 189 439 186 439 194" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath163)" points=" 431 189 439 186 439 194"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="478" x2="431" y1="193" y2="189" stroke-dasharray="5,5"/>
-<polygon fill="white" stroke-dasharray="5,5" clip-path="url(#clipPath163)" points=" 431 189 439 186 439 194" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath163)" points=" 431 189 439 186 439 194"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="624" x2="694" y1="261" y2="427"/>
-<text x="670" y="363" clip-path="url(#clipPath164)" fill="black" stroke="none" xml:space="preserve">contains</text>
-<text x="651" y="266" clip-path="url(#clipPath165)" fill="black" stroke="none" xml:space="preserve">userController[1]</text>
-<text x="632" y="414" clip-path="url(#clipPath166)" fill="black" stroke="none" xml:space="preserve">userDB[1]</text>
-<polygon clip-path="url(#clipPath167)" points=" 624 261 629 265 629 272 624 268" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath167)" points=" 624 261 629 265 629 272 624 268"/>
-<line clip-path="url(#clipPath168)" fill="none" x1="689" x2="694" y1="422" y2="427"/>
-<line clip-path="url(#clipPath168)" fill="none" x1="694" x2="694" y1="427" y2="419"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="577" x2="577" y1="646" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="577" x2="271" y1="602" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
-<polygon fill="white" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="332" x2="332" y1="642" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="332" x2="271" y1="602" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
-<polygon fill="white" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="238" x2="238" y1="641" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="238" x2="271" y1="602" y2="602"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
-<polygon fill="white" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath158)" points=" 271 584 275 592 267 592"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="59" x2="82" y1="591" y2="653"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="82" x2="118" y1="653" y2="653"/>
-<text x="27" y="637" clip-path="url(#clipPath154)" fill="black" stroke="none" xml:space="preserve">Refers to</text>
-<text x="76" y="611" clip-path="url(#clipPath155)" fill="black" stroke="none" xml:space="preserve">groups[*]</text>
-<text x="53" y="678" clip-path="url(#clipPath156)" fill="black" stroke="none" xml:space="preserve">etudiants[*]</text>
-<line clip-path="url(#clipPath157)" fill="none" x1="111" x2="118" y1="656" y2="653"/>
-<line clip-path="url(#clipPath157)" fill="none" x1="118" x2="111" y1="653" y2="650"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="311" x2="418" y1="802" y2="802"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="418" x2="418" y1="802" y2="726"/>
-<text x="369" y="797" clip-path="url(#clipPath150)" fill="black" stroke="none" xml:space="preserve">Refers to</text>
-<text x="322" y="822" clip-path="url(#clipPath151)" fill="black" stroke="none" xml:space="preserve">contrainte_horaires[*]</text>
-<text x="337" y="743" clip-path="url(#clipPath152)" fill="black" stroke="none" xml:space="preserve">professeurs[*]</text>
-<line clip-path="url(#clipPath153)" fill="none" x1="421" x2="418" y1="733" y2="726"/>
-<line clip-path="url(#clipPath153)" fill="none" x1="418" x2="415" y1="726" y2="733"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="586" x2="514" y1="442" y2="442"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="514" x2="490" y1="442" y2="442"/>
-<line clip-path="url(#clipPath149)" fill="none" x1="490" x2="490" y1="442" y2="453"/>
-<text x="442" y="429" clip-path="url(#clipPath159)" fill="black" stroke="none" xml:space="preserve">A_userDBs_couple_DBs</text>
-<text x="574" y="427" clip-path="url(#clipPath160)" fill="black" stroke="none" xml:space="preserve">userDBs[*]</text>
-<text x="406" y="453" clip-path="url(#clipPath161)" fill="black" stroke="none" xml:space="preserve">couple_DBs[*]</text>
-<line clip-path="url(#clipPath162)" fill="none" x1="487" x2="490" y1="446" y2="453"/>
-<line clip-path="url(#clipPath162)" fill="none" x1="490" x2="493" y1="453" y2="446"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="238" x2="238" y1="641" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="238" x2="271" y1="602" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
+<polygon fill="white" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="586" x2="514" y1="442" y2="442"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="514" x2="490" y1="442" y2="442"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="490" x2="490" y1="442" y2="453"/>
+<text x="442" y="429" clip-path="url(#clipPath155)" fill="black" stroke="none" xml:space="preserve">A_userDBs_couple_DBs</text>
+<text x="574" y="427" clip-path="url(#clipPath156)" fill="black" stroke="none" xml:space="preserve">userDBs[*]</text>
+<text x="406" y="453" clip-path="url(#clipPath157)" fill="black" stroke="none" xml:space="preserve">couple_DBs[*]</text>
+<line clip-path="url(#clipPath158)" fill="none" x1="487" x2="490" y1="446" y2="453"/>
+<line clip-path="url(#clipPath158)" fill="none" x1="490" x2="493" y1="453" y2="446"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="577" x2="577" y1="646" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="577" x2="271" y1="602" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
+<polygon fill="white" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="332" x2="332" y1="642" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="332" x2="271" y1="602" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
+<polygon fill="white" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="311" x2="418" y1="802" y2="802"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="418" x2="418" y1="802" y2="726"/>
+<text x="369" y="797" clip-path="url(#clipPath159)" fill="black" stroke="none" xml:space="preserve">Refers to</text>
+<text x="322" y="822" clip-path="url(#clipPath160)" fill="black" stroke="none" xml:space="preserve">contrainte_horaires[*]</text>
+<text x="337" y="743" clip-path="url(#clipPath161)" fill="black" stroke="none" xml:space="preserve">professeurs[*]</text>
+<line clip-path="url(#clipPath162)" fill="none" x1="421" x2="418" y1="733" y2="726"/>
+<line clip-path="url(#clipPath162)" fill="none" x1="418" x2="415" y1="726" y2="733"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="59" x2="82" y1="591" y2="653"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="82" x2="118" y1="653" y2="653"/>
+<text x="27" y="637" clip-path="url(#clipPath163)" fill="black" stroke="none" xml:space="preserve">Refers to</text>
+<text x="76" y="611" clip-path="url(#clipPath164)" fill="black" stroke="none" xml:space="preserve">groups[*]</text>
+<text x="53" y="678" clip-path="url(#clipPath165)" fill="black" stroke="none" xml:space="preserve">etudiants[*]</text>
+<line clip-path="url(#clipPath166)" fill="none" x1="111" x2="118" y1="656" y2="653"/>
+<line clip-path="url(#clipPath166)" fill="none" x1="118" x2="111" y1="653" y2="650"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="478" x2="431" y1="193" y2="189" stroke-dasharray="5,5"/>
+<polygon fill="white" stroke-dasharray="5,5" clip-path="url(#clipPath167)" points=" 431 189 439 186 439 194" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath167)" points=" 431 189 439 186 439 194"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="478" x2="431" y1="193" y2="189" stroke-dasharray="5,5"/>
+<polygon fill="white" stroke-dasharray="5,5" clip-path="url(#clipPath167)" points=" 431 189 439 186 439 194" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath167)" points=" 431 189 439 186 439 194"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="624" x2="694" y1="261" y2="427"/>
+<text x="670" y="363" clip-path="url(#clipPath168)" fill="black" stroke="none" xml:space="preserve">contains</text>
+<text x="651" y="266" clip-path="url(#clipPath169)" fill="black" stroke="none" xml:space="preserve">userController[1]</text>
+<text x="632" y="414" clip-path="url(#clipPath170)" fill="black" stroke="none" xml:space="preserve">userDB[1]</text>
+<polygon clip-path="url(#clipPath171)" points=" 624 261 629 265 629 272 624 268" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath171)" points=" 624 261 629 265 629 272 624 268"/>
+<line clip-path="url(#clipPath172)" fill="none" x1="689" x2="694" y1="422" y2="427"/>
+<line clip-path="url(#clipPath172)" fill="none" x1="694" x2="694" y1="427" y2="419"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="577" x2="577" y1="646" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="577" x2="271" y1="602" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
+<polygon fill="white" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="332" x2="332" y1="642" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="332" x2="271" y1="602" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
+<polygon fill="white" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="238" x2="238" y1="641" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="238" x2="271" y1="602" y2="602"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="271" x2="271" y1="602" y2="584"/>
+<polygon fill="white" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath154)" points=" 271 584 275 592 267 592"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="59" x2="82" y1="591" y2="653"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="82" x2="118" y1="653" y2="653"/>
+<text x="27" y="637" clip-path="url(#clipPath163)" fill="black" stroke="none" xml:space="preserve">Refers to</text>
+<text x="76" y="611" clip-path="url(#clipPath164)" fill="black" stroke="none" xml:space="preserve">groups[*]</text>
+<text x="53" y="678" clip-path="url(#clipPath165)" fill="black" stroke="none" xml:space="preserve">etudiants[*]</text>
+<line clip-path="url(#clipPath166)" fill="none" x1="111" x2="118" y1="656" y2="653"/>
+<line clip-path="url(#clipPath166)" fill="none" x1="118" x2="111" y1="653" y2="650"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="311" x2="418" y1="802" y2="802"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="418" x2="418" y1="802" y2="726"/>
+<text x="369" y="797" clip-path="url(#clipPath159)" fill="black" stroke="none" xml:space="preserve">Refers to</text>
+<text x="322" y="822" clip-path="url(#clipPath160)" fill="black" stroke="none" xml:space="preserve">contrainte_horaires[*]</text>
+<text x="337" y="743" clip-path="url(#clipPath161)" fill="black" stroke="none" xml:space="preserve">professeurs[*]</text>
+<line clip-path="url(#clipPath162)" fill="none" x1="421" x2="418" y1="733" y2="726"/>
+<line clip-path="url(#clipPath162)" fill="none" x1="418" x2="415" y1="726" y2="733"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="586" x2="514" y1="442" y2="442"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="514" x2="490" y1="442" y2="442"/>
+<line clip-path="url(#clipPath153)" fill="none" x1="490" x2="490" y1="442" y2="453"/>
+<text x="442" y="429" clip-path="url(#clipPath155)" fill="black" stroke="none" xml:space="preserve">A_userDBs_couple_DBs</text>
+<text x="574" y="427" clip-path="url(#clipPath156)" fill="black" stroke="none" xml:space="preserve">userDBs[*]</text>
+<text x="406" y="453" clip-path="url(#clipPath157)" fill="black" stroke="none" xml:space="preserve">couple_DBs[*]</text>
+<line clip-path="url(#clipPath158)" fill="none" x1="487" x2="490" y1="446" y2="453"/>
+<line clip-path="url(#clipPath158)" fill="none" x1="490" x2="493" y1="453" y2="446"/>
 </g>
 </g>
 </svg>

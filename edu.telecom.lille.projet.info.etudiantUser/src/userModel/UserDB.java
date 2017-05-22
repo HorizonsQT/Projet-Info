@@ -40,13 +40,16 @@ public class UserDB {
 	 */
 	private String fichier = "fichier_initial";//Nom du fichier
 	private String arbre = System.getProperty("user.dir");
-	/**
-	 * Le HashMap contenant la base de données des utilisateurs
-	 */
+	
+	// On a un HashMap contenant la base de données des utilisateurs
+	//et un HashMap contenant celle des groupes
+	//et un HashMap contenant celle des contraintes horaires
 	private HashMap<Integer, Utilisateur> DB_Utilisateurs = new HashMap<Integer, Utilisateur>();	//Utilisateurs
 	private HashMap<Integer, Groupe> DB_Groupe = new HashMap<Integer, Groupe>();//Groupes
-	private Couple_DB DB_tout = new Couple_DB(DB_Utilisateurs, DB_Groupe);
+	private HashMap<Integer, Contrainte_horaire> DB_Contraintes = new HashMap<Integer, Contrainte_horaire>();
 	
+	private Couple_DB DB_tout = new Couple_DB(DB_Utilisateurs, DB_Groupe, DB_Contraintes);
+
 	
 	/**
 	 * 
@@ -153,7 +156,22 @@ public class UserDB {
 			   int ID = id_int;
 			   Groupe groupe_temp = new Groupe(su, ID);
 			   DB_Groupe.put(ID, groupe_temp);
-			}				
+			}
+			
+			// Les contraintes
+			Element contraintes = racine.getChild("Constraints");// <Constraints>
+			List<Element> liste_contraintes = contraintes.getChildren();// L'ensemble des fils de <Constraints>			
+			for (Element c : liste_contraintes) {
+				String login = c.getChildText("login");
+				int ID = Integer.parseInt(c.getChildText("constraintId"));
+				int begin = Integer.parseInt(c.getChildText("begin"));
+				int end = Integer.parseInt(c.getChildText("end"));
+				String comment = c.getChildText("comment");
+
+				Contrainte_horaire contrainte_temp = new Contrainte_horaire(ID, login, begin, end, comment);
+				DB_Contraintes.put(ID, contrainte_temp);
+			}
+			
 			
 			} catch(IOException e) {
 			    												// Lorsque des erreurs se présentent.
@@ -166,6 +184,7 @@ public class UserDB {
 		
 		DB_tout.setUsers(DB_Utilisateurs);
 		DB_tout.setGroups(DB_Groupe);
+		DB_tout.setConstraints(DB_Contraintes);
 		return DB_tout;
 	}
 	/**
@@ -178,17 +197,23 @@ public class UserDB {
 		DB_tout = DB_new;
 		DB_Groupe = DB_tout.getGroups();
 		DB_Utilisateurs = DB_tout.getUsers();
+		DB_Contraintes = DB_tout.getConstraints();
 		
 		File fichier_xml = new File(arbre, fichier);
 		fichier_xml.createNewFile();
 		
 		Document document = new Document();			//On crée un document
+		
+		Comment comment = new Comment("Base de données contenant les utilisateurs, les groupes, et les contraintes temporelles.");
+		document.addContent(comment);
+
 		Element UsersDB = new Element("UsersDB");	//Elément qui deviendra la racine
 		document.setRootElement(UsersDB);			//<UsersDB> devient la racine
 		
+		
 		//Création de groupes
 		Element Groups = new Element("Groups");
-		for (Groupe g : DB_Groupe.values()) {		//On parcourt les identifiants de groupe dans le HashMap
+		for (Groupe g : DB_Groupe.values()) {		//On parcourt les groupes dans le HashMap
 			String ID = Integer.toString(g.ID());
 			Element Group = new Element("Group");	//On crée un nouveau sous-élement de groupes, qui repréente un groupe
 			Group.addContent(new Element("groupId").setText(ID));// Chaque groupe a un sous-élément groupId qui est associé à une chaîne de carctères, i.e. son identifiant
@@ -237,10 +262,25 @@ public class UserDB {
 			}
 		}
 		
+		// Création des contraintes horaires
+		Element Constraints = new Element("Constraints");
+		for (Contrainte_horaire c : DB_Contraintes.values()) {		//On parcourt les contraintes dans le HashMap
+			Element Constraint = new Element("Constraint");
+			Constraint.addContent(new Element("login").setText(c.login()));
+			Constraint.addContent(new Element("constraintId").setText(Integer.toString(c.ID())));
+			Constraint.addContent(new Element("begin").setText(Integer.toString(c.debut())));
+			Constraint.addContent(new Element("end").setText(Integer.toString(c.fin())));
+			Constraint.addContent(new Element("comment").setText(c.commentaire()));
+			
+			Constraints.addContent(Constraint);				// L'élément <Constraint> créé est ajouté à l'arborescence de <Constraints>
+			
+		}
+		
 		document.getRootElement().addContent(Groups);// L'élément <Groupes>, contenant tous les groupes de la base de données, est associé à la racine
 		document.getRootElement().addContent(Students);// <Students>
 		document.getRootElement().addContent(Teachers);// <Teachers>
 		document.getRootElement().addContent(Administrators);// <Administrators>
+		document.getRootElement().addContent(Constraints);// <Constraints>
 		// Nouvelle sortie arbre +"\\" + fichier
 		XMLOutputter fichier_xml_sortie = new XMLOutputter();
 

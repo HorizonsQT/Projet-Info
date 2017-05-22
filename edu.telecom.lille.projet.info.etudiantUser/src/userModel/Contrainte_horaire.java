@@ -7,6 +7,7 @@ public class Contrainte_horaire {
 	private int date_fin;
 	private String commentaire;
 	
+
 	public Contrainte_horaire(int ID, String prof, int debut, int fin, String com) {
 		identifiant = ID;
 		login_professeur = prof;
@@ -18,7 +19,7 @@ public class Contrainte_horaire {
 	public int ID() {
 		return identifiant;
 	}
-	public String prof() {
+	public String login() {
 		return login_professeur;
 	}
 	public int debut() {

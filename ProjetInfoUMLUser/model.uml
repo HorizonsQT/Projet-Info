@@ -165,8 +165,12 @@
       <ownedAttribute xmi:id="_XAueAD1REeePY5XuAfYwZg" name="Groupe_HashMap" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_B4CVQD7LEeeCdIKF2dWuYg" name="Contrainte_hashMap" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+      </ownedAttribute>
       <ownedOperation xmi:id="_gzzhoD1REeePY5XuAfYwZg" name="groupes"/>
       <ownedOperation xmi:id="_ikYucD1REeePY5XuAfYwZg" name="utilisateurs"/>
+      <ownedOperation xmi:id="_GUTFMD7LEeeCdIKF2dWuYg" name="contraintes"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ufsMED7AEeeCdIKF2dWuYg" memberEnd="_ufzg0D7AEeeCdIKF2dWuYg _uf6OgD7AEeeCdIKF2dWuYg" navigableOwnedEnd="_uf6OgD7AEeeCdIKF2dWuYg">
       <ownedEnd xmi:id="_ufzg0D7AEeeCdIKF2dWuYg" name="userDBs" type="_7rGdAA4NEea0wN3m9VlUGQ" association="_ufsMED7AEeeCdIKF2dWuYg">
