@@ -1,5 +1,7 @@
 package userModel;
 
+import java.io.IOException;
+
 import userController.UserController;
 /**
  * Cette classe permet de tester les fonctions du contrôleur d'utilisateurs.
@@ -18,9 +20,10 @@ public class Main {
 	 * 
 	 * @param args
 	 * 			Les arguments donnés en entrée du programme.
+	 * @throws IOException 
 	 * 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		final String file="usersDB.xml";
 		UserController UC=new UserController(file);
 		UC.addAdmin("su","KF",0001,"Kevin", "Flynn",  "@tron");

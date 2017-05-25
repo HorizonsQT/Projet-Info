@@ -63,8 +63,9 @@ public class UserDB {
 	 * 
 	 * @param fichier
 	 * 		Le nom du fichier qui contient la base de données.
+	 * @throws IOException 
 	 */
-	public UserDB(String fichier){
+	public UserDB(String fichier) {
 		//TODO Fonction à modifier
 		//super();
 		//Administrateur su = root_admin();
@@ -107,6 +108,18 @@ public class UserDB {
 		try {
 			Document document = (Document) builder.build(fichier_xml);
 			Element racine = document.getRootElement();		//La racine représente <UsersDB>
+			
+			// Les groupes
+			Element groups = racine.getChild("Groups");	// <Groups>
+			List<Element> list_groupe = groups.getChildren();// L'ensemble des fils de <Groups>
+			for (Element groupe : list_groupe) {
+				String id_temp = groupe.getChildText("groupId");// Chaque groupe se caractérise par son identifiant de groupe
+				int id_int = Integer.parseInt(id_temp);	// On convertit la chaîne de caractères en nombre
+				int ID = id_int;
+				Groupe groupe_temp = new Groupe(su, ID);
+				DB_Groupe.put(ID, groupe_temp);
+			}
+			
 			// Les étudiants
 			Element etudiants = racine.getChild("Students");// <Students>
 			List<Element> liste_etud = etudiants.getChildren();// L'ensemble des fils de <Students>			
@@ -119,7 +132,14 @@ public class UserDB {
 			   int group_ID = Integer.parseInt(etud.getChildText("groupId"));
 			   
 			   Etudiant etudiant_temp = new Etudiant(login, ID, prenom, nom, mot_de_passe);
-			   etudiant_temp.mettre(group_ID);
+			   //Ajoutons l'étudiant à son groupe
+			   if (group_ID != 0) {//On considère que 0 signifie une absence de groupe
+				   Groupe temp_group = DB_Groupe.get(group_ID);
+				   temp_group.Ajouter(etudiant_temp);
+				   DB_Groupe.remove(group_ID);
+				   DB_Groupe.put(group_ID, temp_group);
+			   }
+			   
 			   DB_Utilisateurs.put(ID, etudiant_temp);
 			}
 			// Les professeurs
@@ -151,17 +171,7 @@ public class UserDB {
 			
 			}
 			
-			// Les groupes
-			Element groups = racine.getChild("Groups");	// <Groups>
-			List<Element> list_groupe = groups.getChildren();// L'ensemble des fils de <Groups>
-			for (Element groupe : list_groupe) {
-			   String id_temp = groupe.getChildText("groupId");// Chaque groupe se caractérise par son identifiant de groupe
-			   int id_int = Integer.parseInt(id_temp);	// On convertit la chaîne de caractères en nombre
-			   int ID = id_int;
-			   Groupe groupe_temp = new Groupe(su, ID);
-			   DB_Groupe.put(ID, groupe_temp);
-			}
-			
+					
 			// Les contraintes
 			Element contraintes = racine.getChild("Constraints");// <Constraints>
 			List<Element> liste_contraintes = contraintes.getChildren();// L'ensemble des fils de <Constraints>			

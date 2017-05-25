@@ -10,18 +10,20 @@ import org.junit.Test;
 import userModel.*;
 
 public class UserDBTest {
-	String fichier = "userDB.xml";
-	UserDB database = new UserDB(fichier);
-	
+
 	@Test
-	public void testGetFile() {
+	public void testGetFile() throws IOException {
+		String fichier = "userDB.xml";
+		UserDB database = new UserDB(fichier);
 		String temp = database.getFile();
 		Boolean result = temp.equals(fichier);
 		assertTrue(result);
 	}
 
 	@Test
-	public void testSetFile() {
+	public void testSetFile() throws IOException {
+		String fichier = "userDB.xml";
+		UserDB database = new UserDB(fichier);
 		String fichier_temp = "UserDB_2.xml";
 		database.setFile(fichier_temp);
 		String resultat_temp = database.getFile();
@@ -30,7 +32,9 @@ public class UserDBTest {
 	}
 
 	@Test
-	public void testLoadDB() {
+	public void testLoadDB() throws IOException {
+		String fichier = "userDB.xml";
+		UserDB database = new UserDB(fichier);
 		database.loadfile();
 		Couple_DB set_temp = database.loadDB();
 		HashMap<Integer, Utilisateur> utilisateurs_temp = set_temp.getUsers();
@@ -47,6 +51,8 @@ public class UserDBTest {
 
 	@Test
 	public void testSaveDB() throws IOException {
+		String fichier = "userDB.xml";
+		UserDB database = new UserDB(fichier);
 		String fichier_temp = "testSaveUserDB.xml";
 		database.setFile(fichier_temp);
 		//On crée les groupes, les utilisateurs, et les cotraintes qui seront mis dans le nouveau HashMap
@@ -81,7 +87,9 @@ public class UserDBTest {
 	}
 
 	@Test
-	public void testRoot_admin() {
+	public void testRoot_admin() throws IOException {
+		String fichier = "userDB.xml";
+		UserDB database = new UserDB(fichier);
 		Administrateur admin = database.root_admin();
 		Administrateur temp = new Administrateur("sudo", 0, "su", "do", "admin");
 		Boolean result1 = admin.login().equals(temp.login());
@@ -92,6 +100,8 @@ public class UserDBTest {
 	
 	@Test
 	public void testMain() throws IOException {
+		String fichier = "userDB.xml";
+		UserDB database = new UserDB(fichier);
 		String fichier_temp_1 = "db_save_1.xml";
 		String fichier_temp_2 = "db_save_2.xml";
 		

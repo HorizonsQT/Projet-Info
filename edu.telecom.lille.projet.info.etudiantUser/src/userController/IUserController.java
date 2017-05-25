@@ -1,5 +1,7 @@
 package userController;
 
+import java.io.IOException;
+
 /**
  * Cette classe est l'interface du contrôleur que vous devez implémenter. 
  * Elle contient un certains nombre de fonctions qui sont utilisées dans l'interface graphique. 
@@ -61,8 +63,9 @@ public interface IUserController{
 	 * 				Le mot de passe du nouvel administrateur.
 	 * @return
 	 * 		Un boolean indiquant si l'administrateur a bien été créé
+	 * @throws IOException 
 	 */
-	public boolean addAdmin(String adminLogin, String newAdminlogin,int adminID, String firstname, String surname, String pwd);
+	public boolean addAdmin(String adminLogin, String newAdminlogin,int adminID, String firstname, String surname, String pwd) throws IOException;
 	/**
 	 * Fonction permettant d'ajouter un professeur. Elle renvoie true si le professeur a été créé et false sinon. 
 	 * Cette fonction devra tester si le professeur existe déjà ou non, puis elle devra le sauvegarder dans la base de donnée.
@@ -80,8 +83,9 @@ public interface IUserController{
 	 * 				Le mot de passe du nouveau professeur.
 	 * @return
 	 * 		Un boolean indiquant si le nouveau professeur a bien été créé
+	 * @throws IOException 
 	 */
-	public boolean addTeacher(String adminLogin, String newteacherLogin,int teacherID, String firstname, String surname, String pwd);
+	public boolean addTeacher(String adminLogin, String newteacherLogin,int teacherID, String firstname, String surname, String pwd) throws IOException;
 	/**
 	 * Fonction permettant d'ajouter un étudiant. Elle renvoie true si l'étudiant a été créé et false sinon. 
 	 * Cette fonction devra tester si l'étudiant existe déjà ou non, puis elle devra le sauvegarder dans la base de donnée.
@@ -99,8 +103,9 @@ public interface IUserController{
 	 * 				Le mot de passe du nouvel étudiant.
 	 * @return
 	 * 		Un boolean indiquant si le nouvel étudiant a bien été créé
+	 * @throws IOException 
 	 */
-	public boolean addStudent(String adminLogin, String newStudentLogin,int studentID, String firstname, String surname, String pwd);
+	public boolean addStudent(String adminLogin, String newStudentLogin,int studentID, String firstname, String surname, String pwd) throws IOException;
 	/**
 	 * Fonction permettant de supprimer un utilisateur. Elle renvoie true si l'utilisateur a été supprimé et false sinon. 
 	 * Cette fonction devra tester si l'utilisateur existe ou non, puis elle devra le retirer de la base de donnée. 
@@ -122,8 +127,9 @@ public interface IUserController{
 	 * 				L'identifiant du groupe à créer.
 	 * @return
 	 * 		Un boolean indiquant si le groupe a été créé.
+	 * @throws IOException 
 	 */
-	public boolean addGroup(String adminLogin, int groupId);
+	public boolean addGroup(String adminLogin, int groupId) throws IOException;
 	/**
 	 * Fonction permettant de supprimer un groupe. Elle renvoie true si le groupe a été supprimé et false sinon. 
 	 * Cette fonction devra tester si le groupe existe ou non, puis elle devra le retirer de la base de donnée. 
@@ -146,8 +152,9 @@ public interface IUserController{
 	 * @param fin
 	 * @param com
 	 * @return
+	 * @throws IOException 
 	 */
-	public boolean addConstraint(String adminLogin, int constraintId, String prof, int debut, int fin, String com);
+	public boolean addConstraint(String adminLogin, int constraintId, String prof, int debut, int fin, String com) throws IOException;
 	/**
 	 * 
 	 * @param adminLogin
@@ -221,7 +228,8 @@ public interface IUserController{
 	 * Fonction sauvegardant la base de donnée dans un fichier XML.
 	 * @return
 	 * 		Un boolean indiquant si la sauvegarde a bien été réalisée.
+	 * @throws IOException 
 	 */
-	public boolean saveDB();
+	public boolean saveDB() throws IOException;
 
 }

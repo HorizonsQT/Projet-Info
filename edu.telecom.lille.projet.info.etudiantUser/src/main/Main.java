@@ -1,5 +1,7 @@
 package main;
 
+import java.io.IOException;
+
 import timeTableController.TimeTableController;
 import userController.UserController;
 import view.MainFrame;
@@ -33,9 +35,10 @@ public class Main {
 	 * 
 	 * @param args
 	 * 		Arguments donnés en entrée du programme 
+	 * @throws IOException 
 	 * 
 	 */
-	public static void main(String args[]){
+	public static void main(String args[]) throws IOException{
 		final String userfile="userDB.xml";
 		final String tTfile="timeTableDB.xml";
 	    final UserController userController=new UserController(userfile);

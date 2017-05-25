@@ -1,5 +1,6 @@
 package userController;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 import userModel.*;
@@ -31,8 +32,9 @@ public class UserController implements IUserController
 	 * 
 	 * @param userfile
 	 * 		Fichier XML contenant la base de données d'utilisateurs
+	 * @throws IOException 
 	 */
-	public UserController(String userfile){
+	public UserController(String userfile) throws IOException{
 		UserDB userDB=new UserDB(userfile);
 		this.setUserDB(userDB);
 	}
@@ -78,38 +80,68 @@ public class UserController implements IUserController
 
 	@Override
 	public boolean addAdmin(String adminLogin, String newAdminlogin, int adminID, String firstname, String surname,
-			String pwd) {
-		Administrateur new_admin = new Administrateur(newAdminlogin, adminID, firstname, surname, pwd);
-		Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
-		//On retire l'ensemble des utilisateurs
-		HashMap<Integer, Utilisateur> DB_Utilisateurs_temp = db_temp.getUsers();
-		//On ajoute l'admin à l'ensemble des utilisateurs
-		DB_Utilisateurs_temp.put(adminID, new_admin);
-		//On remet les utilisateurs dans la base de données.
-		db_temp.setUsers(DB_Utilisateurs_temp);
-		userDB.saveDB(db_temp);
-		//Vérification
-		String username = getUserName(newAdminlogin);
-		String admin_class = getUserClass(newAdminlogin, pwd);
-		Boolean result = false;
-		if (username.equals(firstname+" "+surname) & admin_class.equals(Administrateur.class.getName())) {
-			result = true;
-		}	
-		return result;
+			String pwd) throws IOException {
+		Boolean resultat;
+		if (getUserName(newAdminlogin).equals(firstname+" "+surname)) {
+			resultat = false;
+		} else {
+			Administrateur new_admin = new Administrateur(newAdminlogin, adminID, firstname, surname, pwd);
+			Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
+			//On retire l'ensemble des utilisateurs
+			HashMap<Integer, Utilisateur> DB_Utilisateurs_temp = db_temp.getUsers();
+			//On ajoute l'admin à l'ensemble des utilisateurs
+			DB_Utilisateurs_temp.put(adminID, new_admin);
+			//On remet les utilisateurs dans la base de données.
+			db_temp.setUsers(DB_Utilisateurs_temp);
+			userDB.saveDB(db_temp);
+			saveDB();
+			resultat =  true;
+		}
+		return resultat;
 	}
 
 	@Override
 	public boolean addTeacher(String adminLogin, String newteacherLogin, int teacherID, String firstname,
-			String surname, String pwd) {
-		// TODO Auto-generated method stub
-		return false;
+			String surname, String pwd) throws IOException {
+		Boolean resultat;
+		if (getUserName(newteacherLogin).equals(firstname+" "+surname)) {
+			resultat = false;
+		} else {
+			Professeur new_prof = new Professeur(newteacherLogin, teacherID, firstname, surname, pwd);
+			Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
+			//On retire l'ensemble des utilisateurs
+			HashMap<Integer, Utilisateur> DB_Utilisateurs_temp = db_temp.getUsers();
+			//On ajoute le professeur à l'ensemble des utilisateurs
+			DB_Utilisateurs_temp.put(teacherID, new_prof);
+			//On remet les utilisateurs dans la base de données.
+			db_temp.setUsers(DB_Utilisateurs_temp);
+			userDB.saveDB(db_temp);
+			saveDB();
+			resultat =  true;
+		}
+		return resultat;
 	}
 
 	@Override
 	public boolean addStudent(String adminLogin, String newStudentLogin, int studentID, String firstname,
-			String surname, String pwd) {
-		// TODO Auto-generated method stub
-		return false;
+			String surname, String pwd) throws IOException {
+		Boolean resultat;
+		if (getUserName(newStudentLogin).equals(firstname+" "+surname)) {
+			resultat = false;
+		} else {
+			Etudiant new_stud = new Etudiant(newStudentLogin, studentID, firstname, surname, pwd);
+			Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
+			//On retire l'ensemble des utilisateurs
+			HashMap<Integer, Utilisateur> DB_Utilisateurs_temp = db_temp.getUsers();
+			//On ajoute l'étudiant à l'ensemble des étudiants
+			DB_Utilisateurs_temp.put(studentID, new_stud);
+			//On remet les utilisateurs dans la base de données.
+			db_temp.setUsers(DB_Utilisateurs_temp);
+			userDB.saveDB(db_temp);
+			saveDB();
+			resultat =  true;
+		}
+		return resultat;
 	}
 
 	@Override
@@ -119,9 +151,29 @@ public class UserController implements IUserController
 	}
 
 	@Override
-	public boolean addGroup(String adminLogin, int groupId) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean addGroup(String adminLogin, int groupId) throws IOException {
+		Boolean resultat;
+		Boolean duplicata = false;
+		for (String id : groupsIdToString()) {
+			duplicata = duplicata || Integer.toString(groupId).equals(id);
+			//Si le group est déjà présent, duplicata = true
+		}
+		if (duplicata) {
+			resultat = false;
+		} else {
+			Groupe new_group = new Groupe(adminLogin, groupId);
+			Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
+			//On retire l'ensemble des utilisateurs
+			HashMap<Integer, Groupe> DB_groupes_temp = db_temp.getGroups();
+			//On ajoute l'étudiant à l'ensemble des étudiants
+			DB_groupes_temp.put(groupId, new_group);
+			//On remet les utilisateurs dans la base de données.
+			db_temp.setGroups(DB_groupes_temp);
+			userDB.saveDB(db_temp);
+			saveDB();
+			resultat =  true;
+		}
+		return resultat;
 	}
 
 	@Override
@@ -138,44 +190,87 @@ public class UserController implements IUserController
 
 	@Override
 	public String[] usersToString() {
-		// TODO Auto-generated method stub
-		return null;
+		HashMap<Integer, Utilisateur> DB_Utilisateurs_temp = userDB.loadDB().getUsers();
+		int taille = DB_Utilisateurs_temp.size();
+		String[] tableau_utilisateurs = new String[taille];
+		//tableau_utilisateurs[0] = "login ID firstname surname password groupID";
+		int i = 0;//On initialise le compteur qui désigne la ligne du tableau
+		for (Utilisateur u : DB_Utilisateurs_temp.values()) {
+			tableau_utilisateurs[i] = u.login()+" "+Integer.toString(u.ID())+" "+u.prenom()+" "+u.nom()+" "+u.mot_de_passe()+" "+u.ID_groupe();
+			i = i +1;
+		}
+		return tableau_utilisateurs;
 	}
 
 	@Override
 	public String[] usersLoginToString() {
-		// TODO Auto-generated method stub
-		return null;
+		HashMap<Integer, Utilisateur> DB_Utilisateurs_temp = userDB.loadDB().getUsers();
+		int taille = DB_Utilisateurs_temp.size();
+		String[] tableau_utilisateurs = new String[taille];
+		int i = 0;//On initialise le compteur qui désigne la ligne du tableau
+		for (Utilisateur u : DB_Utilisateurs_temp.values()) {
+			tableau_utilisateurs[i] = u.login();
+			i = i +1;
+		}
+		return tableau_utilisateurs;
 	}
 
 	@Override
 	public String[] studentsLoginToString() {
-		// TODO Auto-generated method stub
-		return null;
+		HashMap<Integer, Utilisateur> DB_Utilisateurs_temp = userDB.loadDB().getUsers();
+		HashMap<Integer, Utilisateur> DB_etud_temp = new HashMap<Integer, Utilisateur>();
+		for (Utilisateur u : DB_Utilisateurs_temp.values()) {
+			if (u.getClass().getName().equals(Etudiant.class.getName())) {
+				DB_etud_temp.put(u.ID(), u);
+			}
+		}
+		int taille = DB_etud_temp.size();
+		String[] tableau_etudiants_login = new String[taille];
+		int i = 0;//On initialise le compteur qui désigne la ligne du tableau
+		for (Utilisateur u : DB_etud_temp.values()) {
+			tableau_etudiants_login[i] = u.login();
+			i = i +1;
+		}
+		return tableau_etudiants_login;
 	}
 
 	@Override
 	public String[] groupsIdToString() {
-		// TODO Auto-generated method stub
-		return null;
+		HashMap<Integer, Groupe> DB_groupes_temp = userDB.loadDB().getGroups();
+		int taille = DB_groupes_temp.size();
+		String[] tableau_groupes = new String[taille];
+		int i = 0;//On initialise le compteur qui désigne la ligne du tableau
+		for (Groupe u : DB_groupes_temp.values()) {
+			tableau_groupes[i] = Integer.toString(u.ID());
+			i = i +1;
+		}
+		return tableau_groupes;
 	}
 
 	@Override
 	public String[] groupsToString() {
-		// TODO Auto-generated method stub
-		return null;
+		HashMap<Integer, Groupe> DB_groupes_temp = userDB.loadDB().getGroups();
+		int taille = DB_groupes_temp.size();
+		String[] tableau_groupes = new String[taille];
+//		tableau_groupes[0] = "ID Admin taille membres";	
+		int i = 0;//On initialise le compteur qui désigne la ligne du tableau
+		for (Groupe u : DB_groupes_temp.values()) {
+			tableau_groupes[i] = Integer.toString(u.ID())+" "+u.Admin()+" "+Integer.toString(u.taille())+" "+u.membres();
+			i = i +1;
+		}
+		return tableau_groupes;
 	}
 
 	@Override
 	public boolean loadDB() {
+		// La base de données émane d'un fichier
 		userDB.loadfile();
-		userDB.loadDB();
 		return true;
 	}
 
 	@Override
-	public boolean saveDB() {
-		// TODO Auto-generated method stub
+	public boolean saveDB() throws IOException  {
+		userDB.savefile();
 		return false;
 	}
 
@@ -188,9 +283,20 @@ public class UserController implements IUserController
 	}
 
 	@Override
-	public boolean addConstraint(String adminLogin, int constraintId, String prof, int debut, int fin, String com) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean addConstraint(String adminLogin, int constraintId, String prof, int debut, int fin, String com) throws IOException {
+		Boolean resultat = true;
+		//TODO Traitement des doublons
+		Contrainte_horaire new_con = new Contrainte_horaire(constraintId, prof, debut, fin, com);
+		Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
+		//On retire l'ensemble des utilisateurs
+		HashMap<Integer, Contrainte_horaire> DB_con_temp = db_temp.getConstraints();
+		//On ajoute l'étudiant à l'ensemble des étudiants
+		DB_con_temp.put(constraintId, new_con);
+		//On remet les utilisateurs dans la base de données.
+		db_temp.setConstraints(DB_con_temp);
+		userDB.saveDB(db_temp);
+		saveDB();
+		return resultat;
 	}
 
 	@Override

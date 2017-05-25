@@ -69,6 +69,7 @@ public class GroupeTest {
 	public void testMembres() {
 		groupe1.Ajouter(etudiant);
 		groupe1.Ajouter(etudiant2);
+//		System.out.println(groupe1.membres());
 		boolean result = groupe1.membres().equals("prenom nom; prenom2 nom2; ");
 		/**
 		 *  On ne peut vérifier une égalité entre chaînes de caractères dans assertTrue
