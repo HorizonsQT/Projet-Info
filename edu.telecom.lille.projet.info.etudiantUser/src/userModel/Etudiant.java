@@ -29,21 +29,7 @@ public class Etudiant extends Utilisateur {
 		this.nom_de_famille = nom;
 		this.mot_de_passe = mot_de_passe;
 	}
-	
-	/**
-	 * Mettre l'étudiant dans une groupe
-	 * @param int groupe_ID
-	 */
-	public void mettre(int groupe_ID) {
-		ID_group = groupe_ID;
-	}
-	
-	/**
-	 * Enlever l'étudiant d'une groupe
-	 */
-	public void enlever() {
-		ID_group = 0;
-	}
+
 	
 	public int ID_groupe() {
 		return ID_group;

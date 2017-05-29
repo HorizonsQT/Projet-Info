@@ -7,7 +7,7 @@ public class Groupe {
 	private String AdminLogin;
 	private int Group_ID;
 	private int Nombre_etudiants = 0;
-	private HashMap<Integer, Etudiant> Ensemble_etudiant = new HashMap<Integer, Etudiant>();
+	private HashMap<Integer, Utilisateur> Ensemble_etudiant = new HashMap<Integer, Utilisateur>();
 	
 	public String Admin() {
 		return AdminLogin;
@@ -35,18 +35,18 @@ public class Groupe {
 	 * On ajoute un etudiant
 	 * Si l'étudiant est déjà dans le groupe, on ne l'ajoute pas
 	 */
-	public void Ajouter(Etudiant etud) {
-		Ensemble_etudiant.putIfAbsent(etud.ID(), etud);
+	public void Ajouter(Utilisateur stud) {//On n'ajoute que des étudiants
+		Ensemble_etudiant.putIfAbsent(stud.ID(), stud);
 		Nombre_etudiants = Ensemble_etudiant.size();
-		etud.mettre(Group_ID);
+		stud.mettre(Group_ID);
 	}
 	/**
 	 * Supprimer un étudiant
 	 */
-	public void Supprimer(Etudiant etud) {
-		Ensemble_etudiant.remove(etud.ID());
+	public void Supprimer(Utilisateur u) {
+		Ensemble_etudiant.remove(u.ID());
 		Nombre_etudiants = Ensemble_etudiant.size();
-		etud.enlever();
+		u.enlever();
 	}
 	/**
 	 * Les membres du groupe

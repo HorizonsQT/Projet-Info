@@ -26,5 +26,14 @@ public class Utilisateur {
 	public int ID_groupe() {// Ne sera utilisé que par les étudiants
 		return 0;// Pour les utilisateurs non-étudiants, la méthode n'a pas de sens et ne devrait pas être utilisée.
 	}
+	/**
+	 * Enlever l'étudiant d'une groupe
+	 */
+	public void enlever() {
+		ID_group = 0;
+	}
+	public void mettre(int groupe_ID) {
+		ID_group = groupe_ID;
+	}
 	
 }

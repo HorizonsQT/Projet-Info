@@ -145,9 +145,39 @@ public class UserController implements IUserController
 	}
 
 	@Override
-	public boolean removeUser(String adminLogin, String userLogin) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean removeUser(String adminLogin, String userLogin) throws IOException {
+		Boolean resultat;
+		
+		//Vérification d'existence
+		if (getUserName(userLogin).equals("Not Found")) {
+			resultat = false;
+		} else {
+			int key = 410;// On retire un utilisateur d'un HashMap par son identifiant
+			Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
+			//On retire l'ensemble des utilisateurs
+			HashMap<Integer, Utilisateur> DB_Utilisateurs_temp = db_temp.getUsers();
+			//On identifie l'identifiant de l'utilisateur
+			for (Utilisateur u : DB_Utilisateurs_temp.values()) {
+				if (u.login().equals(userLogin)) {
+					key = u.ID();
+					if (u.getClass().getName().equals(Etudiant.class.getName()) && (u.ID_groupe() != 0)) {
+						//Les Etudiants sont retirés de leur groupe si leur groupe existe
+						//										i.e. ID_groupe différent de 0
+						HashMap<Integer, Groupe> temp_group_db = db_temp.getGroups();
+						temp_group_db.get(u.ID_groupe()).Supprimer(u);
+						db_temp.setGroups(temp_group_db);
+					}
+				}
+			}
+			//On enlève l'utilisateur à l'ensemble des utilisateurs
+			DB_Utilisateurs_temp.remove(key);
+			//On remet les utilisateurs dans la base de données.
+			db_temp.setUsers(DB_Utilisateurs_temp);
+			userDB.saveDB(db_temp);
+			saveDB();
+			resultat =  true;
+		}
+		return resultat;
 	}
 
 	@Override
@@ -163,11 +193,11 @@ public class UserController implements IUserController
 		} else {
 			Groupe new_group = new Groupe(adminLogin, groupId);
 			Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
-			//On retire l'ensemble des utilisateurs
+			//On retire l'ensemble des groupes
 			HashMap<Integer, Groupe> DB_groupes_temp = db_temp.getGroups();
-			//On ajoute l'étudiant à l'ensemble des étudiants
+			//On ajoute le groupe à l'ensemble des groupes
 			DB_groupes_temp.put(groupId, new_group);
-			//On remet les utilisateurs dans la base de données.
+			//On remet les groupes dans la base de données.
 			db_temp.setGroups(DB_groupes_temp);
 			userDB.saveDB(db_temp);
 			saveDB();
@@ -183,9 +213,31 @@ public class UserController implements IUserController
 	}
 
 	@Override
-	public boolean associateStudToGroup(String adminLogin, String studentLogin, int groupId) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean associateStudToGroup(String adminLogin, String studentLogin, int groupId) throws IOException {
+		Boolean resultat;
+		// On vérifie que l'étudiant existe et que le groupe existe
+		if (getUserClass(adminLogin, studentLogin).equals(Etudiant.class.getName()) && userDB.loadDB().getGroups().containsKey(groupId)) {
+			// On ajoute l'étudiant au groupe
+			Couple_DB db_temp = userDB.loadDB();
+			HashMap<Integer, Groupe> DB_groupes_temp = db_temp.getGroups();
+			Groupe grp;
+			Utilisateur stud;
+			for (Utilisateur u : db_temp.getUsers().values()) {
+				if (u.login().equals(studentLogin)) {
+					stud = u;
+					grp = DB_groupes_temp.get(groupId);
+					grp.Ajouter(stud);
+					DB_groupes_temp.replace(groupId, grp);
+				}
+			}
+			db_temp.setGroups(DB_groupes_temp);
+			userDB.saveDB(db_temp);
+			saveDB();
+			resultat = true;
+		} else {
+			resultat = false;
+		}
+		return resultat;
 	}
 
 	@Override

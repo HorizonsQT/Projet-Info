@@ -116,8 +116,9 @@ public interface IUserController{
 	 * 				Le login d'utilisateur à supprimer.
 	 * @return
 	 * 		Un boolean indiquant si l'utilisateur a bien été supprimé.
+	 * @throws IOException 
 	 */
-	public boolean removeUser(String adminLogin, String userLogin);
+	public boolean removeUser(String adminLogin, String userLogin) throws IOException;
 	/**
 	 * Fonction permettant d'ajouter un groupe. Elle renvoie true si le groupe a été ajouté et false sinon. 
 	 * Cette fonction devra tester si le groupe existe déjà ou non, puis elle devra le créer et le sauvegarder dans la base de donnée. 
@@ -175,8 +176,9 @@ public interface IUserController{
 	 * 				Identifiant du groupe.
 	 * @return
 	 * 		Un boolean indiquant si l'association a bien été réalisée.
+	 * @throws IOException 
 	 */	
-	public boolean associateStudToGroup(String adminLogin, String studentLogin, int groupId);
+	public boolean associateStudToGroup(String adminLogin, String studentLogin, int groupId) throws IOException;
 	/**
 	 * Fonction permettant de récupérer toutes les informations des utilisateurs sous la forme d'un 
 	 * tableau de chaînes de caractères où chaque ligne contient toutes les informations d'un utilisateur.

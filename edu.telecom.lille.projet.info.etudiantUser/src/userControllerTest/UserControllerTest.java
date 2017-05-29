@@ -133,7 +133,7 @@ public class UserControllerTest {
 		//On charge
 		UserController uc = new UserController(fichier);
 
-		//AddAdmin
+		//AddTeacher
 		uc.addTeacher("oldadmin", "newteacherLogin", 42, "firstname", "surname", "pwd");
 		uc.loadDB();//le fichier est bien créé dans la méthode précédente et on le lit.
 		//Vérification
@@ -158,8 +158,18 @@ public class UserControllerTest {
 	}
 
 	@Test
-	public void testRemoveUser() {
-		fail("Not yet implemented"); // TODO
+	public void testRemoveUser() throws IOException {
+		//Création de la base de données
+		String fichier = "testRemoveUser.xml";//Ce fichier n'existe pas encore
+
+		//On charge et on ajoute
+		UserController uc = new UserController(fichier);
+		uc.addStudent("oldadmin", "newstudentLogin", 42, "firstname", "surname", "pwd");
+		// RemoveUser
+		uc.removeUser("oldadmin", "newstudentLogin");
+		Boolean resultat = uc.getUserDB().loadDB().getUsers().containsKey(42);
+		//Vérification
+		assertTrue(!resultat);
 	}
 
 	@Test
@@ -188,9 +198,27 @@ public class UserControllerTest {
 	}
 
 	@Test
-	public void testAssociateStudToGroup() {
-		fail("Not yet implemented"); // TODO
-	}
+	public void testAssociateStudToGroup() throws IOException {
+		//Création de la base de données
+		String fichier = "testAssociatesStudToGroup.xml";//Ce fichier n'existe pas encore
+
+		//On charge et on ajoute un groupe et un etudiant
+		UserController uc = new UserController(fichier);
+		uc.addGroup("adminLogin", 42);
+		uc.addStudent("adminLogin", "newStudentLogin", 12, "firstname", "surname", "pwd");
+		uc.loadDB();//le fichier est bien créé dans la méthode précédente et on le lit.
+
+		//AssociateStudToGroupe
+		System.out.println("1");
+		uc.associateStudToGroup("adminLogin", "newStudentLogin", 42);
+		System.out.println("2");
+
+		//Vérification
+		System.out.println(uc.getUserDB().loadDB().getGroups().get(42).membres());
+		Boolean resultat = false;
+
+		assertTrue(resultat);
+		}
 
 	@Test
 	public void testUsersToString() throws IOException {
@@ -327,9 +355,10 @@ public class UserControllerTest {
 		assertTrue(result);
 	}
 
-	@Test
-	public void testSaveDB() {
-	}
+//	@Test
+//	public void testSaveDB() {
+//	Ça marche.
+//	}
 
 	@Test
 	public void testSetUserDB() {
