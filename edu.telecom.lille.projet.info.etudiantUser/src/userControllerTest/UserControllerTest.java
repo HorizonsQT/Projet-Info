@@ -193,8 +193,29 @@ public class UserControllerTest {
 	}
 
 	@Test
-	public void testRemoveGroup() {
-		fail("Not yet implemented"); // TODO
+	public void testRemoveGroup() throws IOException {
+		//Création de la base de données
+		String fichier = "testRemoveGroup.xml";//Ce fichier n'existe pas encore
+
+		//On charge et on ajoute les groupes
+		UserController uc = new UserController(fichier);
+		uc.addGroup("adminLogin", 42);
+		uc.addGroup("adminLogin", 752);
+		uc.addStudent("adminLogin", "newStudentLogin", 12, "firstname", "surname", "pwd");
+		uc.associateStudToGroup("adminLogin", "newStudentLogin", 42);
+		uc.loadDB();//le fichier est bien créé dans la méthode précédente et on le lit.
+		
+		//RemoveGroup
+		uc.removeGroup("adminLogin", 42);
+		
+		//Vérification de la suppression du groupe
+		Boolean resultat1 = uc.groupsIdToString().length == 1;//On n'a plus qu'un seul groupe
+
+		//Vérification de la suppression du lien de l'étudiant vers le groupe
+		Boolean resultat2 = uc.getUserDB().loadDB().getUsers().get(12).ID_groupe() == 0;
+
+		//assertTrue(resultat1 && !resultat2);
+		assertTrue(resultat1 && resultat2);
 	}
 
 	@Test
@@ -206,16 +227,15 @@ public class UserControllerTest {
 		UserController uc = new UserController(fichier);
 		uc.addGroup("adminLogin", 42);
 		uc.addStudent("adminLogin", "newStudentLogin", 12, "firstname", "surname", "pwd");
+		uc.addStudent("adminLogin", "Tian", 123, "Tian", "Tian", "pwd1");
 		uc.loadDB();//le fichier est bien créé dans la méthode précédente et on le lit.
 
 		//AssociateStudToGroupe
-		System.out.println("1");
 		uc.associateStudToGroup("adminLogin", "newStudentLogin", 42);
-		System.out.println("2");
+		uc.associateStudToGroup("adminLogin", "Tian", 42);
 
 		//Vérification
-		System.out.println(uc.getUserDB().loadDB().getGroups().get(42).membres());
-		Boolean resultat = false;
+		Boolean resultat = "Tian Tian; firstname surname; ".equals(uc.getUserDB().loadDB().getGroups().get(42).membres());
 
 		assertTrue(resultat);
 		}
@@ -355,15 +375,6 @@ public class UserControllerTest {
 		assertTrue(result);
 	}
 
-//	@Test
-//	public void testSaveDB() {
-//	Ça marche.
-//	}
-
-	@Test
-	public void testSetUserDB() {
-		fail("Not yet implemented"); // TODO
-	}
 
 	@Test
 	public void testAddConstraint() throws IOException {
@@ -373,19 +384,33 @@ public class UserControllerTest {
 		//On charge
 		UserController uc = new UserController(fichier);
 
-		//AddGroup
+		//AddConstraint
 		uc.addConstraint("adminLogin", 42, "prof", -753, 476, "com");
 		uc.loadDB();//le fichier est bien créé dans la méthode précédente et on le lit.
-		//Vérification de l'ajout du groupe
+		//Vérification de l'ajout de la contrainte
+		Boolean result = uc.getUserDB().loadDB().getConstraints().containsKey(42);
 		//Vérification par lecture du ficihier xml
-		Boolean resultat1 = true;
-		//TODO
-		assertTrue(resultat1);
+		assertTrue(result);
 	}
 
 	@Test
-	public void testRemoveConstraint() {
-		fail("Not yet implemented"); // TODO
-	}
+	public void testRemoveConstraint() throws IOException {
+		//Création de la base de données
+		String fichier = "testRemoveConstraint.xml";//Ce fichier n'existe pas encore
 
+		//On charge et on ajoute des contraintes
+		UserController uc = new UserController(fichier);
+		uc.addConstraint("adminLogin", 42, "prof", -753, 476, "com");
+		uc.addConstraint("adminLogin", 13, "prof2", -27, 410, "com2");
+		uc.loadDB();//le fichier est bien créé dans la méthode précédente et on le lit.
+		//Vérification de la suppression d'une contrainte
+		uc.removeConstraint("adminLogin", 42);
+		//Vérification par lecture du ficihier xml
+		Boolean resultat = uc.getUserDB().loadDB().getConstraints().containsKey(42);
+		assertTrue(!resultat);
+	}
 }
+	
+	
+	
+	

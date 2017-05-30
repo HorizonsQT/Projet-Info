@@ -207,16 +207,49 @@ public class UserController implements IUserController
 	}
 
 	@Override
-	public boolean removeGroup(String adminLogin, int groupId) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean removeGroup(String adminLogin, int groupId) throws IOException {
+		Boolean resultat;
+		Boolean resultat_temp = false;// Désigne l'existence ou non du groupe
+		//Vérification d'existence
+		for (String ID : groupsIdToString()) {
+			if (ID.equals(Integer.toString(groupId))) {
+				resultat_temp = true;
+			}
+		}
+		if (!resultat_temp) {
+			resultat = false;
+		} else {
+			// On retire un groupe d'un HashMap par son identifiant
+			Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
+			//On retire l'ensemble des groupes
+			HashMap<Integer, Groupe> DB_groupes_temp = db_temp.getGroups();
+			// On enlève les utilisateurs du groupe
+			HashMap<Integer, Utilisateur> DB_users_temp = db_temp.getUsers();
+			for (Utilisateur u : DB_users_temp.values()) {
+				if (u.ID_groupe() == groupId) {
+					DB_groupes_temp.get(groupId).Supprimer(u);
+				}
+			}
+			db_temp.setUsers(DB_users_temp);//On remet les utilisateurs dans la base de données.
+
+			
+			//On enlève le groupe à l'ensemble des groupes
+			DB_groupes_temp.remove(groupId);
+
+			//On remet les groupes dans la base de données.
+			db_temp.setGroups(DB_groupes_temp);
+			userDB.saveDB(db_temp);
+			saveDB();
+			resultat =  true;
+		}
+		return resultat;
 	}
 
 	@Override
 	public boolean associateStudToGroup(String adminLogin, String studentLogin, int groupId) throws IOException {
 		Boolean resultat;
 		// On vérifie que l'étudiant existe et que le groupe existe
-		if (getUserClass(adminLogin, studentLogin).equals(Etudiant.class.getName()) && userDB.loadDB().getGroups().containsKey(groupId)) {
+		if (!(getUserName(studentLogin).equals("Not Found")) && userDB.loadDB().getGroups().containsKey(groupId)) {
 			// On ajoute l'étudiant au groupe
 			Couple_DB db_temp = userDB.loadDB();
 			HashMap<Integer, Groupe> DB_groupes_temp = db_temp.getGroups();
@@ -352,9 +385,27 @@ public class UserController implements IUserController
 	}
 
 	@Override
-	public boolean removeConstraint(String adminLogin, int constraintId) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean removeConstraint(String adminLogin, int constraintId) throws IOException {
+		Boolean resultat;
+		//Vérification d'existence
+		if (userDB.loadDB().getConstraints().containsKey(constraintId)) {
+			// On retire une contrainte d'un HashMap par son identifiant
+			Couple_DB db_temp = userDB.loadDB();//On accède à la base de données
+			//On retire l'ensemble des contraintes
+			HashMap<Integer, Contrainte_horaire> DB_cons_temp = db_temp.getConstraints();
+
+			//On enlève la contrainte à l'ensemble des contraintes
+			DB_cons_temp.remove(constraintId);
+
+			//On remet les groupes dans la base de données.
+			db_temp.setConstraints(DB_cons_temp);;
+			userDB.saveDB(db_temp);
+			saveDB();
+			resultat =  true;
+		} else {
+			resultat = false;
+		}
+		return resultat;
 	}
 	
 	

@@ -141,8 +141,9 @@ public interface IUserController{
 	 * 				Identifiant du groupe à supprimer.
 	 * @return
 	 * 		Un boolean indiquant si le groupe a bien été supprimé.
+	 * @throws IOException 
 	 */
-	public boolean removeGroup(String adminLogin, int groupId);
+	public boolean removeGroup(String adminLogin, int groupId) throws IOException;
 	/**
 	 * 
 	 * @param adminLogin
@@ -162,8 +163,9 @@ public interface IUserController{
 	 * 				Le login de l'administrateur qui va supprimer la constrainte
 	 * @param constraintId
 	 * @return
+	 * @throws IOException 
 	 */
-	public boolean removeConstraint(String adminLogin, int constraintId);
+	public boolean removeConstraint(String adminLogin, int constraintId) throws IOException;
 	/**
 	 * Fonction permettant d'associer un étudiant à un groupe. Elle renvoie true si l'association a été réalisée et false sinon. 
 	 * Cette fonction devra tester si l'étudiant et le groupe existent ou non, puis elle devra sauvegarder la base de donnée. 
