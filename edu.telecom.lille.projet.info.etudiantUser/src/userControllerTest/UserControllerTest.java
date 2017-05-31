@@ -351,7 +351,7 @@ public class UserControllerTest {
 //			System.out.println(s);
 //		}
 		//Vérification
-		Boolean resultat = "1 sudo 2 Tian Tian; prenom nom_de_famille; ".equals(tableau_groupes[0]);
+		Boolean resultat = "1 sudo 1 prenom nom_de_famille; ".equals(tableau_groupes[0]);
 		assertTrue(resultat);
 	}
 

@@ -5,6 +5,9 @@ import java.util.HashMap;
 
 import userModel.*;
 
+import java.io.File;
+
+
 /**
  * Cette classe est le contrôleur d'utilisateurs que vous devez implémenter. 
  * Elle contient un attribut correspondant à la base de données utilisateurs que vous allez créer.
@@ -36,6 +39,15 @@ public class UserController implements IUserController
 	 */
 	public UserController(String userfile) throws IOException{
 		UserDB userDB=new UserDB(userfile);
+		// Si le fichier existe, on charge la base de données correspondante.
+		String arbre = System.getProperty("user.dir");
+		File emplacement = new File(arbre+"/"+userfile);
+		Boolean existence = emplacement.exists();
+		if (existence) {
+			userDB.loadfile();
+		} else {
+			
+		}
 		this.setUserDB(userDB);
 	}
 

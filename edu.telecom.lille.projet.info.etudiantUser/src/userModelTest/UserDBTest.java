@@ -36,6 +36,7 @@ public class UserDBTest {
 		String fichier = "userDB.xml";
 		UserDB database = new UserDB(fichier);
 		database.loadfile();
+
 		Couple_DB set_temp = database.loadDB();
 		HashMap<Integer, Utilisateur> utilisateurs_temp = set_temp.getUsers();
 		HashMap<Integer, Groupe> groupes_temp = set_temp.getGroups();

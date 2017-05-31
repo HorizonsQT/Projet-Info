@@ -108,7 +108,6 @@ public class UserDB {
 		try {
 			Document document = (Document) builder.build(fichier_xml);
 			Element racine = document.getRootElement();		//La racine représente <UsersDB>
-			
 			// Les groupes
 			Element groups = racine.getChild("Groups");	// <Groups>
 			List<Element> list_groupe = groups.getChildren();// L'ensemble des fils de <Groups>
@@ -119,7 +118,7 @@ public class UserDB {
 				Groupe groupe_temp = new Groupe(su, ID);
 				DB_Groupe.put(ID, groupe_temp);
 			}
-			
+
 			// Les étudiants
 			Element etudiants = racine.getChild("Students");// <Students>
 			List<Element> liste_etud = etudiants.getChildren();// L'ensemble des fils de <Students>			
@@ -133,15 +132,23 @@ public class UserDB {
 			   
 			   Etudiant etudiant_temp = new Etudiant(login, ID, prenom, nom, mot_de_passe);
 			   //Ajoutons l'étudiant à son groupe
+
 			   if (group_ID != 0) {//On considère que 0 signifie une absence de groupe
-				   Groupe temp_group = DB_Groupe.get(group_ID);
+				   Groupe temp_group;
+				   if (!(DB_Groupe.containsValue(group_ID))) {
+					   // L'identifiant de groupe correspond à un groupe qui n'existe pas
+					   // On crée ce groupe.
+					   temp_group = new Groupe(root_admin().login, group_ID);
+				   } else {
+					   temp_group = DB_Groupe.get(group_ID);
+				   }
 				   temp_group.Ajouter(etudiant_temp);
 				   DB_Groupe.remove(group_ID);
 				   DB_Groupe.put(group_ID, temp_group);
 			   }
-			   
 			   DB_Utilisateurs.put(ID, etudiant_temp);
 			}
+
 			// Les professeurs
 			Element professeurs = racine.getChild("Teachers");// <Teachers>
 			List<Element> liste_prof = professeurs.getChildren();// L'ensemble des fils de <Teachers>			
@@ -156,6 +163,7 @@ public class UserDB {
 			   Professeur prof_temp = new Professeur(login, ID, prenom, nom, mot_de_passe);
 			   DB_Utilisateurs.put(ID, prof_temp);
 			}
+
 			// Les administrateurs
 			Element administrateurs = racine.getChild("Administrators");// <Administrators>
 			List<Element> liste_admin = administrateurs.getChildren();// L'ensemble des fils de <Administrators>			
@@ -171,7 +179,7 @@ public class UserDB {
 			
 			}
 			
-					
+	
 			// Les contraintes
 			Element contraintes = racine.getChild("Constraints");// <Constraints>
 			List<Element> liste_contraintes = contraintes.getChildren();// L'ensemble des fils de <Constraints>			
@@ -185,7 +193,7 @@ public class UserDB {
 				Contrainte_horaire contrainte_temp = new Contrainte_horaire(ID, login, begin, end, comment);
 				DB_Contraintes.put(ID, contrainte_temp);
 			}
-			
+
 			
 			} catch(IOException e) {
 			    												// Lorsque des erreurs se présentent.
