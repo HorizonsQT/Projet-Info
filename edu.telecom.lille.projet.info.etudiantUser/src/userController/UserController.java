@@ -46,7 +46,6 @@ public class UserController implements IUserController
 		if (existence) {
 			userDB.loadfile();
 		} else {
-			
 		}
 		this.setUserDB(userDB);
 	}
@@ -69,9 +68,19 @@ public class UserController implements IUserController
 		String userClass = "Not Found";
 		for (Utilisateur user : userDB.loadDB().getUsers().values()) {
 			//On parcourt les utilisateurss
-			if (user.login().equals(userLogin) & user.mot_de_passe().equals(userPwd)) {
+			if (user.login().compareTo(userLogin) == 0 && user.mot_de_passe().compareTo(userPwd) == 0) {
 				//On vérifie que le login est associé au mot de passe fourni.
 				userClass = user.getClass().getName();
+				System.out.println(userClass);
+				if(userClass.compareTo("userModel.Etudiant")==0) {
+					userClass="Student";
+				} if (userClass.compareTo("userModel.Professeur")==0) {
+					userClass="Teacher";
+				} if (userClass.compareTo("userModel.Administrateur")==0) {
+					userClass="Administrator";
+				} else {
+					userClass  = "";
+				}
 			}
 		}
 		return userClass;
